@@ -1,0 +1,132 @@
+
+.container-features {
+  border: solid 1px rgba(255, 255, 255, .3);
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-right: 0px;
+  border-bottom: 0px;
+
+  .row {
+    overflow: hidden;
+
+    > div {
+      padding: 0px;
+    }
+  }
+
+  .c5-feature {
+    min-height: 100px;
+    color: rgba(255, 255, 255, .7);
+    text-align: center;
+    padding: 50px 15px 50px 15px;
+    font-weight: bold;
+    border: solid 1px rgba(255, 255, 255, .3);
+    border-top: 0px;
+    border-left: 0px;
+  }
+
+  .c5-feature .fa {
+    font-weight: bold;
+
+    &::before {
+      color: rgba(255, 255, 255, .3);
+      display: block;
+      font-size: 50px;
+      font-weight: lighter;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+span.concrete5 {
+  color: #34b0f6;
+}
+
+p.c5-right-balance {
+  color: #aaa;
+  font-size: 16px;
+
+  > span {
+    padding-bottom: 5px;
+    border-bottom: solid 1px;
+  }
+}
+
+.c5-purple-video {
+  width: 350px;
+  height: 200px;
+  background: rgba(102, 51, 153, .7);
+  border-radius: 5px;
+  display: block;
+  margin: 50px auto;
+  color: white;
+
+  > i {
+    &:before {
+      display: block;
+      font-size: 30px;
+      margin-bottom: 20px;
+      margin-top:65px;
+    }
+  }
+
+}
+
+.c5-main-cta {
+
+  > div.header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    > h1 {
+      font-size: 50px;
+      line-height: 40px;
+    }
+    > span {
+      color: #aaa;
+    }
+  }
+
+  > div.cta-box {
+    background-color: #34b0f6;
+
+    > div {
+      text-align: center;
+
+      &.left-hand {
+        border-right: solid 1px rgba(255, 255, 255, .5);
+        > a {
+          color: white;
+          background-color: rgba(0, 0, 0, .3);
+        }
+      }
+
+      &.right-hand {
+        > a {
+          background-color: rgba(255, 255, 255, .7);
+        }
+      }
+
+      > a {
+        border-radius: 5px;
+        display: inline-block;
+        width: 175px;
+        height: 175px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        .fa {
+          &:before {
+            margin-top: 67px;
+            margin-bottom: 10px;
+            display: block;
+            font-size: 30px;
+          }
+        }
+      }
+      min-height: 50px;
+    }
+  }
+}
