@@ -19,31 +19,31 @@
                 <div class="col-sm-2 text-center">
                     <a href="https://jquery.com/" target="_blank">
                         <img alt="concrete5 uses jQuery for all frontend functionality!"
-                             src="http://concrete5.org/themes/version_4/images/logos/jquery.png" />
+                             src="/packages/concrete5_theme/themes/concrete5_theme/images/logos/jquery.png" />
                     </a>
                 </div>
                 <div class="col-sm-2 text-center">
                     <a href="http://symfony.com/" target="_blank">
                         <img alt="Symfony lends us its router, class loader, eventing, and more!"
-                             src="http://concrete5.org/themes/version_4/images/logos/symfony.png" />
+                             src="/packages/concrete5_theme/themes/concrete5_theme/images/logos/symfony.png" />
                     </a>
                 </div>
                 <div class="col-sm-2 text-center">
                     <a href="http://imperavi.com/redactor/" target="_blank">
                         <img alt="Redactor is the default WYSIWYG editor for concrete5!"
-                             src="http://concrete5.org/themes/version_4/images/logos/redactor.png" />
+                             src="/packages/concrete5_theme/themes/concrete5_theme/images/logos/redactor.png" />
                     </a>
                 </div>
                 <div class="col-sm-2 text-center">
                     <a href="http://www.doctrine-project.org/" target="_blank">
                         <img alt="concrete5 makes heavy use of doctrines database abstraction (DBAL) and its ORM!"
-                             src="http://concrete5.org/themes/version_4/images/logos/doctrine.png" />
+                             src="/packages/concrete5_theme/themes/concrete5_theme/images/logos/doctrine.png" />
                     </a>
                 </div>
                 <div class="col-sm-2 text-center">
                     <a href="http://laravel.com/" target="_blank">
                         <img alt="Laravel gives us Config, Application Container, Filesystem, and more!"
-                             src="http://concrete5.org/themes/version_4/images/logos/laravel.png" />
+                             src="/packages/concrete5_theme/themes/concrete5_theme/images/logos/laravel.png" />
                     </a>
                 </div>
             </div>
