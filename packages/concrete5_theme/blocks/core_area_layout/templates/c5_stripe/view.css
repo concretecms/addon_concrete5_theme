@@ -1,3 +1,4 @@
+
 div.ccm-block-custom-template-c5-stripe {
 	background-image: none !important;
 	/* We take the background image away from the DIV, because the custom template does it
@@ -7,7 +8,6 @@ div.ccm-block-custom-template-c5-stripe {
 div.ccm-block-custom-template-c5-stripe.parallaxic-container,  /* template is also the container */
 div.ccm-block-custom-template-c5-stripe div.parallaxic-container {
 	position: relative;
-	overflow: hidden;
 	z-index: 5;
 }
 
@@ -26,3 +26,11 @@ div.ccm-block-custom-template-c5-stripe .parallax-stripe-inner {
 	position: relative;
 }
 
+div.ccm-block-custom-template-c5-stripe .parallax-image-container {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
