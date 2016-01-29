@@ -2,20 +2,9 @@
 
 namespace Concrete\Package\Concrete5Theme;
 
-use Concrete\Core\Asset\AssetList;
 use Concrete\Core\Backup\ContentImporter;
-use Concrete\Core\Foundation\Service\ProviderList;
-use Concrete\Core\Job\Job;
-use Concrete\Core\Routing\Redirect;
-use Concrete\Core\Support\Facade\Route;
-use Concrete\Package\Concrete5Docs\Page\Relater;
-use Concrete\Package\Concrete5Docs\User\UserInfo;
-use Package;
-use Page;
-use Concrete\Core\Block\BlockType\BlockType;
-use PortlandLabs\Concrete5\Documentation\Migration\Publisher\Block\MarkdownPublisher;
-use SinglePage;
-use \Concrete\Core\Page\Theme\Theme;
+use Concrete\Core\Package\Package;
+use Concrete\Core\Page\Theme\Theme;
 
 class Controller extends Package
 {
@@ -27,8 +16,6 @@ class Controller extends Package
     protected $pkgAutoloaderRegistries = array(
         'src/PortlandLabs' => '\PortlandLabs'
     );
-    protected $pkgAllowsFullContentSwap = true;
-
 
     public function getPackageDescription()
     {
@@ -38,6 +25,26 @@ class Controller extends Package
     public function getPackageName()
     {
         return t("concrete5.org theme");
+    }
+
+    public function install()
+    {
+        $pkg = Parent::install();
+        $pkg->updateInstall();
+    }
+
+    public function update()
+    {
+        parent::update();
+        $pkg = Package::getByHandle($this->pkgHandle);
+        $pkg->updateInstall();
+    }
+
+    public function updateInstall()
+    {
+        if (!Theme::getByHandle('concrete5')) {
+            Theme::add('concrete5', $this);
+        }
     }
 
 }
