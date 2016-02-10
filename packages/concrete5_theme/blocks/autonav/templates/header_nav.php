@@ -30,6 +30,10 @@ $item_generator = function($items) {
     $length = count($items);
     for ($i = 0; $i < $length;) {
         $item = $items[$i];
+        if ($item->isHome) {
+            $i++;
+            continue;
+        }
         $item->children = [];
 
         do {
