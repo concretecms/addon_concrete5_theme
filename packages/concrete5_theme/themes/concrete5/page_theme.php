@@ -2,7 +2,9 @@
 
 namespace Concrete\Package\Concrete5Theme\Theme\Concrete5;
 
-class PageTheme extends \Concrete\Core\Page\Theme\Theme
+use Concrete\Core\Area\Layout\Preset\Provider\ThemeProviderInterface;
+
+class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProviderInterface
 {
     public function registerAssets()
     {
@@ -25,6 +27,22 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme
         $this->requireAsset('javascript', 'core/frontend/parallax-image');
         $this->requireAsset('javascript-conditional', 'html5-shiv');
         $this->requireAsset('javascript-conditional', 'respond');
+    }
+
+    public function getThemeAreaLayoutPresets()
+    {
+        $presets = array(
+            array(
+                'handle' => 'left_sidebar',
+                'name' => 'Left Sidebar',
+                'container' => '<div class="row"></div>',
+                'columns' => [
+                    '<div class="col-sm-4"></div>',
+                    '<div class="col-sm-8"></div>'
+                ],
+            )
+        );
+        return $presets;
     }
 
     protected $pThemeGridFrameworkHandle = 'bootstrap3';
