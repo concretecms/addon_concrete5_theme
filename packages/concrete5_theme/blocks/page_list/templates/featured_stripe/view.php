@@ -28,7 +28,7 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
             ?>
 
             <div class="col-sm-4">
-                <div class="c5-featured-page">
+                <a class="c5-featured-page" href="<?= \URL::to($page) ?>">
                     <div class="image">
                         <?php
                         if ($thumbnail) {
@@ -43,7 +43,7 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
                         <span class="title"><?= $title ?></span>
                         <p class="description"><?= $description ?></p>
                     </div>
-                </div>
+                </a>
             </div>
 
         <?php } ?>
