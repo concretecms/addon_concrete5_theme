@@ -102,7 +102,9 @@ p.c5-right-balance {
   border-radius: 5px;
   display: block;
   margin: 50px auto;
-  color: white;
+  color: rgba(255,255,255, .5);
+
+  .transition(color 0.1s linear);
 
   > i {
     &:before {
@@ -114,7 +116,7 @@ p.c5-right-balance {
   }
 
   &:hover {
-    color: rgba(255,255,255, .5);
+    color: rgba(255,255,255, 1.0);
   }
 
 }
@@ -254,6 +256,7 @@ p.c5-right-balance {
   .stripe {
     height: 100%;
     background: #0099ff;
+    .border-left-radius(3px);
 
     > svg {
       fill: rgba(255, 255, 255, 0.65);
