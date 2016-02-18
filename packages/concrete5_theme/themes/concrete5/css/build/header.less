@@ -10,7 +10,12 @@ div.ccm-page {
   header {
     -webkit-font-smoothing: antialiased;
     background: #E5F1FA url(../images/header.png) repeat-x;
+    border-bottom: 1px solid #e9edef;
 
+    &.documentation-header {
+      background: #efefef url(../images/header_documentation.png) repeat-x;
+      border-bottom: 1px solid #dedede;
+    }
     ul.navbar-right {
       margin-right: 0px;
     }
@@ -35,7 +40,7 @@ div.ccm-page {
         font-size: 24px;
         position: absolute;
         left: 165px;
-        top: 18px;
+        top: 19px;
       }
 
     }
@@ -47,6 +52,7 @@ div.ccm-page {
     form {
       position: relative;
       margin-top: 7px;
+      margin-left: 20px;
 
       input[type=text] {
         padding-right: 15px;
@@ -70,7 +76,7 @@ div.ccm-page {
       }
     }
 
-    ul.header-nav li a {
+    nav ul li a {
       font-size: 13px;
       font-weight: bold;
       color: #049cdb;
@@ -81,7 +87,7 @@ div.ccm-page {
 
     &.navbar {
 
-      &.documentation-header {
+      &.navbar-static-top {
         margin-bottom: 0px;
         z-index: 9;
       }
@@ -99,17 +105,20 @@ div.ccm-page {
       .dropdown-menu {
         .border-radius(5px);
         border: 1px solid #dde2e6;
-        background-color: rgba(255, 255, 255, 0.9);
+        padding: 7px 7px 13px 0px;
+        margin-top: -10px;
+        background-color: #fff;
         .box-shadow(none);
         right: auto;
         left: 0px;
         > li {
           > a {
             -webkit-font-smoothing: antialiased;
+            font-weight: normal;
             font-size: 13px;
-            line-height: 13px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            line-height: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
             padding-left: 15px;
             padding-right: 15px;
             color: #949b9e;
@@ -127,7 +136,6 @@ div.ccm-page {
     }
   }
 }
-
 
 header #header-notifications {
   *zoom: 1;
@@ -174,4 +182,39 @@ header #header-notifications a.sign-in {
 header #header-notifications a.sign-in:hover {
   text-decoration: none;
   color: #0fbc66;
+}
+
+
+/**
+ * Documentation header
+ */
+div.ccm-page {
+  header.documentation-header {
+    nav ul li a {
+      color: #8b8b8b;
+
+      &:hover {
+        color: #333;
+      }
+    }
+
+    #header-notifications {
+      a {
+        &.sign-up,
+        &.profile-link {
+          color: darken(#0099cc, 8%);
+          &:hover {
+            color: darken(#155f78, 8%);
+          }
+        }
+
+        &.sign-in {
+          color: darken(#00cc66, 8%);
+          &:hover {
+            color: darken(#0fbc66, 8%);
+          }
+        }
+      }
+    }
+  }
 }
