@@ -8,7 +8,12 @@ div.ccm-page {
 
 
   header {
+    -webkit-font-smoothing: antialiased;
     background: #E5F1FA url(../images/header.png) repeat-x;
+
+    ul.navbar-right {
+      margin-right: 0px;
+    }
 
     nav {
       margin-top: 10px;
@@ -22,6 +27,16 @@ div.ccm-page {
 
       padding: 20px 15px 0px 0px;
       display: block;
+      position: relative;
+
+      span {
+        color: #d5d6d8;
+        font-weight: bold;
+        font-size: 24px;
+        position: absolute;
+        left: 165px;
+        top: 18px;
+      }
 
     }
 
@@ -30,18 +45,28 @@ div.ccm-page {
     }
 
     form {
+      position: relative;
       margin-top: 7px;
 
       input[type=text] {
-        padding-left: 24px;
+        padding-right: 15px;
+        padding-left: 35px;
+        padding-top: 8px;
+        height: 37px;
+        border: 1px solid #e8e8e8;
+        padding-bottom: 7px;
+        width: 240px;
+        .border-radius(18px);
+        .box-shadow(inset 0px 0px 1px 0px #ddd);
+        outline: 0px;
       }
 
       i {
-        color: #999;
+        color: #aaa;
         position: absolute;
         z-index: 10;
-        top: 17px;
-        left: 7px;
+        top: 12px;
+        left: 12px;
       }
     }
 
@@ -55,6 +80,7 @@ div.ccm-page {
     }
 
     &.navbar {
+
       &.documentation-header {
         margin-bottom: 0px;
         z-index: 9;
@@ -71,12 +97,25 @@ div.ccm-page {
       }
 
       .dropdown-menu {
+        .border-radius(5px);
+        border: 1px solid #dde2e6;
         background-color: rgba(255, 255, 255, 0.9);
-
+        .box-shadow(none);
+        right: auto;
+        left: 0px;
         > li {
           > a {
+            -webkit-font-smoothing: antialiased;
+            font-size: 13px;
+            line-height: 13px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: #949b9e;
             &:hover {
-              background-color: rgba(215, 215, 215, 0.9);
+              background-color: #fff;
+              color: #049cdb;
             }
           }
         }
@@ -94,7 +133,6 @@ header #header-notifications {
   *zoom: 1;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 27px;
   text-align: right;
 }
 header-notifications:before,

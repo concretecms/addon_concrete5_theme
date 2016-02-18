@@ -82,6 +82,13 @@ $item_generator = function($items) {
             <?php
         }
         ?>
+        <li class="hidden-sm">
+            <form action="<?=DIR_REL?>/search">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search" name="query">
+            </form>
+        </li>
+
     </ul>
 </nav>
 
