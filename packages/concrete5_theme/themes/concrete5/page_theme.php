@@ -27,6 +27,7 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProvider
         $this->requireAsset('javascript', 'core/frontend/parallax-image');
         $this->requireAsset('javascript-conditional', 'html5-shiv');
         $this->requireAsset('javascript-conditional', 'respond');
+        $this->requireAsset('core/lightbox');
     }
 
     public function getThemeAreaLayoutPresets()

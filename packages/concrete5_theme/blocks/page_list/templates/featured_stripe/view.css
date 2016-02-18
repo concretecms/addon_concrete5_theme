@@ -1,29 +1,33 @@
-div.c5-featured-page img, div.c5-featured-page picture {
+a.c5-featured-page {
+    text-decoration: none;
+}
+
+a.c5-featured-page img, a.c5-featured-page picture {
     width: 100%;
 }
-div.c5-featured-page > .details {
+a.c5-featured-page > .details {
     width: 100%;
-    background-color: white;
     padding: 10px 25px;
     text-align: center;
     color: #666;
 }
-div.c5-featured-page > .details > span.title {
+a.c5-featured-page:hover {
+    text-decoration: none;
+    background-color:#f0f0f0;
+}
+a.c5-featured-page > .details > span.title {
     color: black;
     font-weight: bolder;
     margin-bottom: 10px;
 }
-
-
 div.c5-featured-stripe {
     margin-bottom: 100px;
     margin-top: 50px;
 }
 
 @media (min-width: 992px) {
-    div.c5-featured-page > .details {
+    a.c5-featured-page > .details {
         width: 100%;
-        background-color: white;
         padding: 25px 50px;
         text-align: center;
     }
