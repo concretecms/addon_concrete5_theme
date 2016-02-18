@@ -23,12 +23,22 @@
     border: solid 1px rgba(255, 255, 255, .3);
     border-top: 0px;
     border-left: 0px;
+    cursor: pointer;
+    .transition(background-color 0.2s linear);
 
+    &:hover {
+      background-color: rgba(255,255,255,0.1);
+      color: #fff;
+      svg {
+        fill: #fff;
+      }
+    }
     span {
       font-weight: bold;
     }
 
     svg, img {
+      .transition(background-color 0.2s linear);
       fill: rgb(154, 167, 190);
       display: block;
       width: 55px;
@@ -116,6 +126,15 @@ p.c5-right-balance {
     margin-top: 50px;
     margin-bottom: 50px;
 
+    h1 {
+      font-size: 52px;
+      color: #000;
+      font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 100;
+      -webkit-font-smoothing: subpixel-antialiased;
+    }
+
+
     > span, > p {
       color: #aaa;
     }
@@ -132,6 +151,8 @@ p.c5-right-balance {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    margin: 0px auto 0px auto;
+    width: 760px;
 
     > div {
       text-align: center;
@@ -149,14 +170,27 @@ p.c5-right-balance {
         }
 
         > a {
-          color: white;
+          color: rgba(255,255,255,0.7);
+          font-weight: bold;
           background-color: rgba(0, 0, 0, .3);
+          .transition(all 0.2s linear);
+
+          &:hover {
+            color: rgba(255,255,255,1.0);
+            background-color: rgba(0, 0, 0, .6);
+          }
         }
       }
 
       &.right-hand {
         > a {
+          font-weight: bold;
           background-color: rgba(255, 255, 255, .7);
+          .transition(all 0.2s linear);
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 1.0);
+          }
         }
       }
 
@@ -165,16 +199,24 @@ p.c5-right-balance {
         display: inline-block;
         width: 185px;
         height: 165px;
-        margin-top: 70px;
-        margin-bottom: 70px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        font-size: 15px;
+
+        &:hover {
+          text-decoration: none;
+        }
 
         .fa {
           &:before {
             margin-top: 47px;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             display: block;
-            font-size: 30px;
+            font-size: 32px;
           }
+
+          display: block;
+          text-align: center;
         }
       }
       min-height: 50px;

@@ -13,7 +13,7 @@
     <div class="built-with">
         <div class="container">
             <div class="row">
-                <div class="col-sm-2">
+                <div class="col-sm-4">
                     <span class="built-with-the-best">Built with the Best:</span>
                 </div>
                 <div class="col-sm-2 text-center">
@@ -26,12 +26,6 @@
                     <a href="http://symfony.com/" target="_blank">
                         <img alt="Symfony lends us its router, class loader, eventing, and more!"
                              src="/packages/concrete5_theme/themes/concrete5/images/logos/symfony.png" />
-                    </a>
-                </div>
-                <div class="col-sm-2 text-center">
-                    <a href="http://imperavi.com/redactor/" target="_blank">
-                        <img alt="Redactor is the default WYSIWYG editor for concrete5!"
-                             src="/packages/concrete5_theme/themes/concrete5/images/logos/redactor.png" />
                     </a>
                 </div>
                 <div class="col-sm-2 text-center">
