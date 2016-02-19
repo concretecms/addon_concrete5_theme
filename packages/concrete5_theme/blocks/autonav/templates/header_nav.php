@@ -83,9 +83,12 @@ $item_generator = function($items) {
         }
         ?>
         <li class="hidden-sm">
-            <form action="<?=DIR_REL?>/search">
+            <form action="<?=DIR_REL?>/gsearch" id="cse-search-box">
                 <i class="fa fa-search"></i>
-                <input type="text" placeholder="Search" name="query">
+                <input type="hidden" name="cx" value="006258482937498927541:j8gv1aamati" />
+                <input type="hidden" name="cof" value="FORID:10" />
+                <input type="hidden" name="ie" value="UTF-8" />
+                <input type="text" placeholder="Search" class="search" name="q" />
             </form>
         </li>
 
