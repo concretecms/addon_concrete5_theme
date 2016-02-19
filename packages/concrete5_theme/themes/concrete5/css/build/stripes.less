@@ -200,21 +200,18 @@ p.c5-right-balance {
   border-radius: 3px;
   font-size: 14px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: stretch;
 
-  .row {
-    display: table;
 
-    > div {
-      display: table-cell;
-      float: none;
-      .clearfix;
-    }
+  > div {
+    flex: auto;
+    .clearfix;
   }
 
   .stripe {
-    height: 100%;
+    flex: 0 0 33.333%;
     background: #0099ff;
-    .border-left-radius(3px);
 
     > svg {
       fill: rgba(255, 255, 255, 0.65);
