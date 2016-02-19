@@ -45,8 +45,13 @@
 
 .c5-featured-stripe  {
   .c5-featured-page {
-    background: white;
+    background: #f4f4f4;
     margin-bottom: 20px;
+    .transition(all 0.1s linear);
+
+    div.image-inner {
+      .transition(all 0.1s linear);
+    }
   }
 
 }
@@ -448,66 +453,32 @@ p.c5-right-balance {
   }
 }
 
-.c5-news {
-  border: solid 1px #cccccc;
-  border-radius: 5px;
-  display: block;
-  overflow: hidden;
-
-  &:hover {
-    text-decoration: none;
-  }
-
-  > .header {
-    background-color: #f6f6f6;
-    padding: 20px 40px;
-
-    > h2 {
-      color: #0099ff;
-      font-size: 20px;
-      line-height: 23px;
-      min-height: 60px;
-    }
-
-    > .info {
-      font-size: 12px;
-      font-weight: 500;
-      color: #aaa;
-
-      > author, > .category {
-        font-weight: bold;
-        color: black;
-      }
-    }
-  }
-
-  > .description {
-    padding: 20px 40px;
-  }
-}
-
 
 .c5-news {
-  border: solid 1px #cccccc;
+  border: solid 1px #ccc;
   border-radius: 5px;
   display: block;
   margin-bottom: 20px;
+  .transition(all 0.1s linear);
 
   > .header {
     background-color: #f6f6f6;
+    .border-top-radius(5px);
     padding: 20px 40px;
 
     > h2 {
+      .transition(all 0.1s linear);
       color: #0099ff;
-      font-size: 20px;
-      line-height: 23px;
+      font-size: 22px;
+      line-height: 22px;
+      font-weight: bold;
       min-height: 60px;
     }
 
     > .info {
-      font-size: 12px;
-      font-weight: 500;
-      color: #aaa;
+      font-size: 11px;
+      font-weight: bold;
+      color: #909598;
 
       > author, > .category {
         font-weight: bold;
@@ -518,6 +489,16 @@ p.c5-right-balance {
 
   > .description {
     padding: 20px 40px;
+    font-size: 13px;
+    color: #646464;
+  }
+
+  &:hover {
+    text-decoration: none;
+    border-color: #0099ff;
+    h2 {
+      color: #005580;
+    }
   }
 }
 

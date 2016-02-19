@@ -30,6 +30,7 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
             /** @var \DateTime $date */
             $date = $page->getCollectionDatePublicObject();
             $date_string = $date->format('M d, Y');
+            $parent = Page::getByID($page->getCollectionParentID());
             ?>
 
             <div class="col-md-4 col-md-offset-0">
@@ -38,7 +39,7 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
                         <h2 class="title"><?= h($title) ?></h2>
                         <span class="info">
                             Posted by <author><?= h($author->getUserDisplayName()) ?></author>
-                            in <strong class="category">Some Category</strong>
+                            in <strong class="category"><?=$parent->getCollectionName()?></strong>
                             on <strong class="date"><?= $date_string ?></strong>
                         </span>
                     </div>
