@@ -10,13 +10,13 @@ $this->inc('elements/header.php'); ?>
     ?>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4 col-sidebar">
+            <div class="col-lg-3 col-sm-4 col-sidebar">
                 <?
                 $a = new Area('Sidebar');
                 $a->display($c);
                 ?>
             </div>
-            <div class="col-sm-8 col-content">
+            <div class="col-lg-8 col-lg-offset-1 col-sm-8 col-content">
                 <?
                 $a = new Area('Blog Post Header');
                 $a->setAreaGridMaximumColumns(12);

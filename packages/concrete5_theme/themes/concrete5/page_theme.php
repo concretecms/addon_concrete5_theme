@@ -38,8 +38,8 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProvider
                 'name' => 'Left Sidebar',
                 'container' => '<div class="row"></div>',
                 'columns' => [
-                    '<div class="col-sm-4"></div>',
-                    '<div class="col-sm-8"></div>'
+                    '<div class="col-lg-3 col-sm-4"></div>',
+                    '<div class="col-lg-8 col-lg-offset-1 col-sm-8"></div>'
                 ],
             )
         );
