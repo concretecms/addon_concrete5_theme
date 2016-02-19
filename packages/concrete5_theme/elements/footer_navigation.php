@@ -86,38 +86,46 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-2 col-sm-offset-1">
-                    <p><a title="About" href="http://www.concrete5.org/about/"><strong>About</strong></a></p>
-                    <p><a title="Tour" href="http://www.concrete5.org/about/tour/">Tour</a></p>
-                    <p><a title="Showcase" href="http://www.concrete5.org/about/showcase/">Showcase</a></p>
-                    <p><a title="Testimonials" href="http://www.concrete5.org/about/testimonials/">Testimonials</a></p>
-                    <p><a title="Blog" href="http://www.concrete5.org/about/blog/">Blog</a></p>                    </div>
+                    <p><a title="About" href="//www.concrete5.org/about"><strong>About</strong></a></p>
+                    <p><a title="Features" href="//www.concrete5.org/about/features_index">Features</a></p>
+                    <p><a title="Case Studies" href="//www.concrete5.org/about/case_studies">Case Studies</a></p>
+                    <p><a title="Showcase" href="//www.concrete5.org/about/showcase">Showcase</a></p>
+                    <p><a title="Testimonials" href="//www.concrete5.org/about/testimonials">Testimonials</a></p>
+                    <p><a title="Blog" href="//www.concrete5.org/about/blog">Blog</a></p>
+                </div>
                 <div class="col-sm-2">
-                    <p><a title="Add-Ons" href="http://www.concrete5.org/marketplace/addons/"><strong>Add-Ons</strong></a></p>
-                    <p><strong><a title="Themes" href="http://www.concrete5.org/marketplace/themes/">Themes</a></strong></p>
-                    <p><strong><a title="Add-on Installation" href="http://www.concrete5.org/marketplace/how_to_install_add_ons_and_themes_/">Install Guide</a></strong></p>
-                    <p><strong></strong><a title="Get Started" href="http://www.concrete5.org/get-started/"><strong>Hosting</strong></a></p>
-                    <p><a title="Enterprise" href="http://www.concrete5.org/support/enterprise/"><strong>Enterprise</strong></a></p>                    </div>
+                    <p><a title="Download &amp; Extend" href="//www.concrete5.org/marketplace/addons"><strong>Download &amp; Extend</strong></a></p>
+                    <p><a title="Themes" href="//www.concrete5.org/marketplace/themes">Themes</a></p>
+                    <p><a title="Install Add-ons" href="//www.concrete5.org/marketplace/how_to_install_add_ons_and_themes_">Install Add-ons</a></p>
+                    <p><a title="Hosting" href="//www.concrete5.org/get-started/hosting">Hosting</a></p>
+                    <p><a title="Enterprise" href="//www.concrete5.org/support/enterprise">Enterprise</a></p>
+                    <p><a title="Download" href="//www.concrete5.org/get-started">Download</a></p>
+                </div>
                 <div class="col-sm-2">
-                    <p><a title="Community" href="http://www.concrete5.org/community/"><strong>Community</strong></a></p>
-                    <p><a title="Forums" href="http://www.concrete5.org/community/forums/">Forums</a></p>
-                    <p><a title="Developers" href="http://www.concrete5.org/developers/">Developers</a></p>
-                    <p><a title="Jobs" href="http://www.concrete5.org/community/forums/jobs1/">Job Board</a></p>
-                    <p><a title="International" href="http://www.concrete5.org/community/international/">International</a></p>                    </div>
+                    <p><a title="Community" href="//www.concrete5.org/community"><strong>Community</strong></a></p>
+                    <p><a title="Forums" href="//www.concrete5.org/community/forums">Forums</a></p>
+                    <p><a title="Developers" href="//www.concrete5.org/developers">Get Involved</a></p>
+                    <p><a title="Jobs" href="//www.concrete5.org/community/forums/jobs1">Job Board</a></p>
+                    <p><a title="International" href="//www.concrete5.org/community/international">International</a></p>
+                </div>
                 <div class="col-sm-2">
-                    <p><a title="Documentation" href="http://www.concrete5.org/documentation/"><strong>Documentation</strong></a></p>
-                    <p><a title="Getting Started" href="http://documentation.concrete5.org/editors/">Editors Guide</a></p>
-                    <p><a title="Learn concrete5" href="http://documentation.concrete5.org/developers/">Developers Guide</a></p>
-                    <p><a title="Tutorials" href="http://documentation.concrete5.org/tutorials/">Tutorials</a></p>
-                    <p><a title="Certification" href="http://www.concrete5.org/community/certification/">Training &amp; Certification</a></p>                    </div>
+                    <p><a title="Getting Started" href="//documentation.concrete5.org/"><strong>Getting Started</strong></a></p>
+                    <p><a title="Try Now" href="//www.concrete5.org/trial">Try Now</a></p>
+                    <p><a title="Documentation" href="//documentation.concrete5.org/">Documentation</a></p>
+                    <p><a title="Installation" href="//documentation.concrete5.org/developers/installation/installation">Installation</a></p>
+                    <p><a title="Tutorials" href="//documentation.concrete5.org/tutorials">Tutorials</a></p>
+                    <p><a title="Training &amp; Certification" href="//www.concrete5.org/documentation/training1">Training &amp; Certification</a></p>
+                </div>
                 <div class="col-sm-2">
                     <p><strong>Company</strong></p>
-                    <p><a title="concrete5.org Privacy Policy" href="http://www.concrete5.org/help/legal/concrete5_org_privacy_policy/">Privacy Policy</a></p>
-                    <p><a title="concrete5.org Terms of Use" href="http://www.concrete5.org/help/legal/terms/">Terms of Use</a></p>
-                    <p><a title="DMCA Takedown Policy" href="http://www.concrete5.org/help/legal/dmca-takedown-policy/">DMCA Take Down</a></p>
-                    <p><a title="Refund Policy" href="http://www.concrete5.org/help/legal/refund-policy/">Refund Policy</a></p>
-                    <p><a title="eNewsletters" href="http://www.concrete5.org/community/enewsletters/">eNewsletter</a></p>
-                    <p><a title="Swag" href="http://www.concrete5.org/marketplace/swag/">Swag</a></p>
-                    <p><a title="Contact Us" href="http://www.concrete5.org/help/legal/contact_us/">Contact Us</a></p>                    </div>
+                    <p><a title="Privacy Policy" href="http://www.concrete5.org/help/legal/concrete5_org_privacy_policy">Privacy Policy</a></p>
+                    <p><a title="Terms of Use" href="http://www.concrete5.org/help/legal/terms">Terms of Use</a></p>
+                    <p><a title="DMCA Takedown Policy" href="http://www.concrete5.org/help/legal/dmca-takedown-policy">DMCA Take Down</a></p>
+                    <p><a title="Refund Policy" href="http://www.concrete5.org/help/legal/refund-policy">Refund Policy</a></p>
+                    <p><a title="eNewsletters" href="http://www.concrete5.org/community/enewsletters">eNewsletter</a></p>
+                    <p><a title="Swag" href="http://www.concrete5.org/marketplace/swag">Swag</a></p>
+                    <p><a title="Contact Us" href="http://www.concrete5.org/help/legal/contact_us">Contact Us</a></p>
+                </div>
             </div>
         </div>
     </div>

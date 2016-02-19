@@ -33,7 +33,7 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
             ?>
 
             <div class="col-md-4 col-md-offset-0">
-                <div class="c5-news">
+                <a class="c5-news" href="<?= \URL::to($page) ?>">
                     <div class="header">
                         <h2 class="title"><?= h($title) ?></h2>
                         <span class="info">
@@ -43,7 +43,7 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
                         </span>
                     </div>
                     <p class="description"><?= $description ?></p>
-                </div>
+                </a>
             </div>
 
         <?php } ?>
