@@ -118,13 +118,13 @@
                 </div>
                 <div class="col-sm-2">
                     <p><strong>Company</strong></p>
-                    <p><a title="Privacy Policy" href="http://www.concrete5.org/help/legal/concrete5_org_privacy_policy">Privacy Policy</a></p>
-                    <p><a title="Terms of Use" href="http://www.concrete5.org/help/legal/terms">Terms of Use</a></p>
-                    <p><a title="DMCA Takedown Policy" href="http://www.concrete5.org/help/legal/dmca-takedown-policy">DMCA Take Down</a></p>
-                    <p><a title="Refund Policy" href="http://www.concrete5.org/help/legal/refund-policy">Refund Policy</a></p>
-                    <p><a title="eNewsletters" href="http://www.concrete5.org/community/enewsletters">eNewsletter</a></p>
-                    <p><a title="Swag" href="http://www.concrete5.org/marketplace/swag">Swag</a></p>
-                    <p><a title="Contact Us" href="http://www.concrete5.org/help/legal/contact_us">Contact Us</a></p>
+                    <p><a title="Privacy Policy" href="//www.concrete5.org/help/legal/concrete5_org_privacy_policy">Privacy Policy</a></p>
+                    <p><a title="Terms of Use" href="//www.concrete5.org/help/legal/terms">Terms of Use</a></p>
+                    <p><a title="DMCA Takedown Policy" href="//www.concrete5.org/help/legal/dmca-takedown-policy">DMCA Take Down</a></p>
+                    <p><a title="Refund Policy" href="//www.concrete5.org/help/legal/refund-policy">Refund Policy</a></p>
+                    <p><a title="eNewsletters" href="//www.concrete5.org/community/enewsletters">eNewsletter</a></p>
+                    <p><a title="Swag" href="//www.concrete5.org/marketplace/swag">Swag</a></p>
+                    <p><a title="Contact Us" href="//www.concrete5.org/help/legal/contact_us">Contact Us</a></p>
                 </div>
             </div>
         </div>
