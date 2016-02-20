@@ -87,7 +87,7 @@
             <div class="row">
                 <div class="col-sm-2 col-sm-offset-1">
                     <p><a title="About" href="//www.concrete5.org/about"><strong>About</strong></a></p>
-                    <p><a title="Features" href="//www.concrete5.org/about/features_index">Features</a></p>
+                    <p><a title="Features" href="//www.concrete5.org/about/feature-index">Features</a></p>
                     <p><a title="Case Studies" href="//www.concrete5.org/about/case_studies">Case Studies</a></p>
                     <p><a title="Showcase" href="//www.concrete5.org/about/showcase">Showcase</a></p>
                     <p><a title="Testimonials" href="//www.concrete5.org/about/testimonials">Testimonials</a></p>
@@ -97,15 +97,15 @@
                     <p><a title="Download &amp; Extend" href="//www.concrete5.org/marketplace/addons"><strong>Download &amp; Extend</strong></a></p>
                     <p><a title="Themes" href="//www.concrete5.org/marketplace/themes">Themes</a></p>
                     <p><a title="Install Add-ons" href="//www.concrete5.org/marketplace/how_to_install_add_ons_and_themes_">Install Add-ons</a></p>
-                    <p><a title="Hosting" href="//www.concrete5.org/get-started/hosting">Hosting</a></p>
-                    <p><a title="Enterprise" href="//www.concrete5.org/support/enterprise">Enterprise</a></p>
-                    <p><a title="Download" href="//www.concrete5.org/get-started">Download</a></p>
+                    <p><a title="Hosting" href="//www.concrete5.org/download/hosting">Hosting</a></p>
+                    <p><a title="Enterprise" href="//www.concrete5.org/solutions">Enterprise</a></p>
+                    <p><a title="Download" href="//www.concrete5.org/download">Download</a></p>
                 </div>
                 <div class="col-sm-2">
                     <p><a title="Community" href="//www.concrete5.org/community"><strong>Community</strong></a></p>
                     <p><a title="Forums" href="//www.concrete5.org/community/forums">Forums</a></p>
                     <p><a title="Developers" href="//www.concrete5.org/developers">Get Involved</a></p>
-                    <p><a title="Jobs" href="//www.concrete5.org/community/forums/jobs1">Job Board</a></p>
+                    <p><a title="Jobs" href="//www.concrete5.org/community/jobs">Job Board</a></p>
                     <p><a title="International" href="//www.concrete5.org/community/international">International</a></p>
                 </div>
                 <div class="col-sm-2">
