@@ -29,10 +29,6 @@ div.ccm-page {
       padding-right: 0px;
     }
 
-    .navbar-header {
-      max-width: 100px;
-    }
-
     a.header-logo {
 
       padding: 20px 15px 0px 0px;
@@ -220,6 +216,17 @@ div.ccm-page {
             color: darken(#0fbc66, 8%);
           }
         }
+      }
+    }
+  }
+}
+
+
+@media (min-width: @screen-tablet) {
+  div.ccm-page {
+    header {
+      .navbar-header {
+        max-width: 100px;
       }
     }
   }
