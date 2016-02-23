@@ -33,6 +33,7 @@ $this->inc('elements/header.php'); ?>
                 <?
                 $inspector = new \Concrete\Package\Concrete5Docs\Page\PageInspector($c);
                 if ($inspector->canEditInDocumentationComposer()) { ?>
+                    <br/>
                     <div class="well text-muted">
                         <p style="text-align: center">
                         <?=t('Could this page use improvement? Edit it!')?><br/><br/>
