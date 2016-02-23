@@ -7,7 +7,7 @@ a.c5-featured-page div.image {
 
     height: 200px;
     line-height: 200px;
-    background: #000 url(../../../../themes/concrete5/images/bg_featured_stripe.png) no-repeat;
+    background: #000 url(/packages/concrete5_theme/themes/concrete5/images/bg_featured_stripe.png) no-repeat;
     background-size: cover;
     text-align: center;
 }
