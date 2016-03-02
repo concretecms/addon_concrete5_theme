@@ -107,6 +107,7 @@
                     <p><a title="Developers" href="//www.concrete5.org/developers">Get Involved</a></p>
                     <p><a title="Jobs" href="//www.concrete5.org/community/jobs">Job Board</a></p>
                     <p><a title="International" href="//www.concrete5.org/community/international">International</a></p>
+                    <p><a title="Marketplace News" href="//www.concrete5.org/about/marketplace-news">Marketplace News</a></p>
                 </div>
                 <div class="col-sm-2">
                     <p><a title="Getting Started" href="//documentation.concrete5.org/"><strong>Getting Started</strong></a></p>
@@ -158,6 +159,10 @@
                             <i class="fa fa-github-alt"></i>
                         </a>
                     </aside>
+                    <div class="pull-right liquidweb">
+                        <a href="https://www.liquidweb.com/dedicated">Dedicated Servers</a> by
+                        <img class="liquidweb-logo" alt="LiquidWeb" src="/packages/concrete5_theme/themes/concrete5/images/logos/liquidweb.png">
+                    </div>
                 </div>
             </div>
         </div>
