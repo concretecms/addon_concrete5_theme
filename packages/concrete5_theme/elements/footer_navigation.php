@@ -108,6 +108,7 @@
                     <p><a title="Jobs" href="//www.concrete5.org/community/jobs">Job Board</a></p>
                     <p><a title="International" href="//www.concrete5.org/community/international">International</a></p>
                     <p><a title="Marketplace News" href="//www.concrete5.org/about/marketplace-news">Marketplace News</a></p>
+                    <p><a title="Security" href="//www.concrete5.org/developers/security">Security Disclosure</a></p>
                 </div>
                 <div class="col-sm-2">
                     <p><a title="Getting Started" href="//documentation.concrete5.org/"><strong>Getting Started</strong></a></p>
