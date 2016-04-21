@@ -18,7 +18,24 @@
             )
             document.querySelector('head').appendChild(msViewportStyle)
         }
-    </script>
+    </script
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@concrete5" />
+    <?php
+    if ($title = $c->getAttribute('meta_title')) {
+        ?><meta name="twitter:title" content="<?= h(preg_replace('/\s\s+/', ' ', $title)) ?>"/><?php
+    }
+    if ($description = $c->getAttribute('meta_description')) {
+        ?><meta name="twitter:description" content="<?= h(preg_replace('/\s+/', ' ', $description)) ?>"/><?php
+    }
+    /** @var Concrete\Core\File\File $thumbnail */
+    if ($thumbnail = $c->getAttribute('thumbnail')) {
+        ?><meta name="twitter:image" content="<?= $thumbnail->getVersion()->getURL() ?>" /><?php
+    }
+    ?>
+
+
 </head>
 <body>
 
