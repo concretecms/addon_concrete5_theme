@@ -18,7 +18,7 @@
             )
             document.querySelector('head').appendChild(msViewportStyle)
         }
-    </script
+    </script>
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@concrete5" />
