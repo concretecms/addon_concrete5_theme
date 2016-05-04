@@ -25,6 +25,6 @@
         }
     });
 </script>
-<script src="https://www.concrete5.org/application/js/wcbit.js" async defer/>
+<script src="https://www.concrete5.org/application/js/wcbit.js" async defer></script>
 </body>
 </html>
