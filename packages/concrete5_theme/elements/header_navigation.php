@@ -34,6 +34,11 @@
                                 <input type="text" placeholder="Search" name="query">
                             </form>
                         </li>
+                        <li class="hidden-xs">
+                            <div class="wcbit-toggle">
+
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </div>

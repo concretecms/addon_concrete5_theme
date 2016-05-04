@@ -13,5 +13,18 @@
     try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
     catch(e){window.attachEvent("onload", $buo_f)}
 </script>
+
+<script>
+    $(function() {
+        var load = [
+            '/packages/concrete5_theme/themes/concrete5/images/icon-header.svg',
+            '/packages/concrete5_theme/themes/concrete5/images/icon-header-hover.svg'
+        ], image = new Image();
+        for (var key in load) {
+            image.src = load[key];
+        }
+    });
+</script>
+<script src="/application/js/wcbit.js" async defer/>
 </body>
 </html>
