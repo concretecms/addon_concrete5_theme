@@ -90,7 +90,7 @@ class MetaTags
     public function outputTags()
     {
         foreach ($this->getTags() as $key => $value) {
-            echo '<meta name="' . $key . '" value="' . h($value) . '" />';
+            echo '<meta name="' . $key . '" content="' . h($value) . '" />';
         }
     }
 
