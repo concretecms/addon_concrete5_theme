@@ -38,7 +38,7 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
                     <div class="header">
                         <h2 class="title"><?= h($title) ?></h2>
                         <span class="info">
-                            Posted by <author><?= h($author->getUserDisplayName()) ?></author>
+                            Posted by <author><?= h($author ? $author->getUserDisplayName() : 'unknown') ?></author>
                             in <strong class="category"><?=$parent->getCollectionName()?></strong>
                             on <strong class="date"><?= $date_string ?></strong>
                         </span>
