@@ -23,6 +23,7 @@ class MetaTags
     public function getTags()
     {
         $url = $this->resolver->resolve(array($this->collection));
+        
         $tags = array(
             'fb:profile_id' => '244758055571618',
             'twitter:card' => 'summary',
@@ -90,7 +91,11 @@ class MetaTags
     public function outputTags()
     {
         foreach ($this->getTags() as $key => $value) {
-            echo '<meta property="' . $key . '" content="' . h($value) . '" />';
+            $type = 'property';
+            if (substr($key, 0, 7) == 'twitter') {
+                $type = 'name';
+            }
+            echo '<meta ' . $type . '="' . $key . '" content="' . h($value) . '" />';
         }
     }
 
