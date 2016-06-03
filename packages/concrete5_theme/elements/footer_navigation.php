@@ -129,6 +129,24 @@
                     <p><a title="Contact Us" href="//www.concrete5.org/help/legal/contact_us">Contact Us</a></p>
                 </div>
             </div>
+            <div class="row social" style="background-color: transparent;">
+                <div class="social-icons col-sm-offset-1">
+                    <aside style="text-align:left">
+                        <a href="https://twitter.com/concrete5" title="concrete5 on Twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/concrete5" title="concrete5 on Facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCywmkk3TWHLcYyKafNDFCUA" title="concrete5 on Youtube">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                        <a href="https://www.github.com/concrete5" title="concrete5 on Github">
+                            <i class="fa fa-github-alt"></i>
+                        </a>
+                    </aside>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -146,23 +164,17 @@
                         </span>
                 </div>
                 <div class="col-sm-6 social-icons">
-                    <aside class="pull-right">
-                        <a href="https://twitter.com/concrete5" title="concrete5 on Twitter">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a href="https://www.facebook.com/concrete5" title="concrete5 on Facebook">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCywmkk3TWHLcYyKafNDFCUA" title="concrete5 on Youtube">
-                            <i class="fa fa-youtube"></i>
-                        </a>
-                        <a href="https://www.github.com/concrete5" title="concrete5 on Github">
-                            <i class="fa fa-github-alt"></i>
-                        </a>
-                    </aside>
-                    <div class="pull-right liquidweb">
-                        <a href="https://www.liquidweb.com/dedicated">Dedicated Servers</a> by
-                        <img class="liquidweb-logo" alt="LiquidWeb" src="/packages/concrete5_theme/themes/concrete5/images/logos/liquidweb.png">
+                    <div class='pull-right'>
+                        <div class="sponsor">
+                            <a href="https://www.liquidweb.com/dedicated">Dedicated Servers by
+                                <img class="logo" alt="LiquidWeb" src="/packages/concrete5_theme/themes/concrete5/images/logos/liquidweb.png">
+                            </a>
+                        </div>
+                        <div class="sponsor">
+                            <a href="https://uptime.com/">Monitoring by
+                                <img class="logo" alt="Uptime" src="/packages/concrete5_theme/themes/concrete5/images/logos/uptime.png">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
