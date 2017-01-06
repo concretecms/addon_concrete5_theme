@@ -116,7 +116,7 @@
                     <p><a title="Documentation" href="//documentation.concrete5.org/">Documentation</a></p>
                     <p><a title="Installation" href="//documentation.concrete5.org/developers/installation/installation">Installation</a></p>
                     <p><a title="Tutorials" href="//documentation.concrete5.org/tutorials">Tutorials</a></p>
-                    <p><a title="Training &amp; Certification" href="//www.concrete5.org/documentation/training1">Training &amp; Certification</a></p>
+                    <p><a title="Training &amp; Certification" href="//www.concrete5.org/community/training1">Training &amp; Certification</a></p>
                 </div>
                 <div class="col-sm-2">
                     <p><strong>Company</strong></p>
