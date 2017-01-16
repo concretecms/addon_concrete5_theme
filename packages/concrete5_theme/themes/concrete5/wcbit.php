@@ -52,7 +52,7 @@ if ($loggedIn) {
 
     <div class="wcbit-alert-dialog container">
         <div class="wcbit-alert-icon">
-            <img src="<?= BASE_URL . $view->getThemePath()?>/images/icon-group-white.svg" />
+            <img src="<?= $view->getThemePath()?>/images/icon-group-white.svg" />
         </div>
         <div class="wcbit-cta">
             <span class="wcbit-wcbit">
