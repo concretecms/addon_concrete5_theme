@@ -165,11 +165,15 @@
                 </div>
                 <div class="col-sm-6 social-icons">
                     <div class='pull-right'>
+                        <?php
+                        /**
                         <div class="sponsor">
                             <a href="https://www.liquidweb.com/dedicated">Dedicated Servers by
                                 <img class="logo" alt="LiquidWeb" src="/packages/concrete5_theme/themes/concrete5/images/logos/liquidweb.png">
                             </a>
                         </div><span> - </span>
+                         */
+                        ?>
                         <div class="sponsor">
                             <a href="https://uptime.com/">Monitoring by
                                 <img class="logo uptime" alt="Uptime" src="/packages/concrete5_theme/themes/concrete5/images/logos/uptime.png">
