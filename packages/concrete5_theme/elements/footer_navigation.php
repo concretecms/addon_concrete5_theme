@@ -106,6 +106,7 @@
                     <p><a title="Forums" href="//www.concrete5.org/community/forums">Forums</a></p>
                     <p><a title="Developers" href="//www.concrete5.org/developers">Get Involved</a></p>
                     <p><a title="Jobs" href="//www.concrete5.org/community/jobs">Job Board</a></p>
+                    <p><a title="Translate" href="https://translate.concrete5.org/">Translations</a></p>
                     <p><a title="International" href="//www.concrete5.org/community/international">International</a></p>
                     <p><a title="Marketplace News" href="//www.concrete5.org/about/marketplace-news">Marketplace News</a></p>
                     <p><a title="Security" href="//www.concrete5.org/developers/security">Security Disclosure</a></p>
