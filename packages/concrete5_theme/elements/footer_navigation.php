@@ -103,6 +103,7 @@
                 </div>
                 <div class="col-sm-2">
                     <p><a title="Community" href="//www.concrete5.org/community"><strong>Community</strong></a></p>
+                    <p><a title="Forums" href="//www.concrete5.org/slack">Slack</a></p>
                     <p><a title="Forums" href="//www.concrete5.org/community/forums">Forums</a></p>
                     <p><a title="Developers" href="//www.concrete5.org/developers">Get Involved</a></p>
                     <p><a title="Jobs" href="//www.concrete5.org/community/jobs">Job Board</a></p>
