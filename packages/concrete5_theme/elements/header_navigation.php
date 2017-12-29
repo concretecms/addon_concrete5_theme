@@ -31,7 +31,7 @@
                         <li class="hidden-sm">
                             <form action="<?=DIR_REL?>/search">
                                 <i class="fa fa-search"></i>
-                                <input type="text" placeholder="Search" name="query" class="st-default-search-input">
+                                <input type="text" placeholder="Search" name="query" class="st-default-search-input" style="background:none;box-sizing:border-box">
                             </form>
                         </li>
                         <li class="hidden-xs">
