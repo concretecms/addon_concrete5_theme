@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "concrete5/core": "^8.3"
+    }
+}
