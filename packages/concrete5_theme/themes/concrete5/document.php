@@ -5,7 +5,7 @@ $this->inc('elements/header.php'); ?>
 
 <main>
 
-    <?
+    <?php
     $a = new Area('Page Header');
     $a->enableGridContainer();
     $a->display($c);
@@ -13,24 +13,22 @@ $this->inc('elements/header.php'); ?>
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-content">
-                <?
+                <?php
                 $a = new Area('Main');
                 $a->setAreaGridMaximumColumns(12);
                 $a->display($c);
                 ?>
-                <?
+                <?php
                 $a = new Area('Conversation');
                 $a->setAreaGridMaximumColumns(12);
                 $a->display($c);
                 ?>
             </div>
             <div class="col-sm-4 col-sidebar">
-                <?
+                <?php
                 $a = new Area('Sidebar');
                 $a->display($c);
-                ?>
 
-                <?
                 $inspector = new \Concrete\Package\Concrete5Docs\Page\PageInspector($c);
                 if ($inspector->canEditInDocumentationComposer()) { ?>
                     <br/>
@@ -46,7 +44,7 @@ $this->inc('elements/header.php'); ?>
         </div>
     </div>
 
-    <?
+    <?php
     $a = new Area('Page Footer');
     $a->enableGridContainer();
     $a->display($c);
