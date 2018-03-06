@@ -7,8 +7,8 @@ $this->inc('elements/header.php'); ?>
         <div class="row">
             <div class="col-sm-12">
 
-                <? $a = new Area('Main'); ?>
-                <? $a->display($c); ?>
+                <?php $a = new Area('Main'); ?>
+                <?php $a->display($c); ?>
 
                 <a href="<?=DIR_REL?>/"><?=t('Back to Home')?></a>.
 

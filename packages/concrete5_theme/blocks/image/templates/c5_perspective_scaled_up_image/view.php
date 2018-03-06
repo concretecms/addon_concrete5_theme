@@ -39,6 +39,6 @@
 
         <div class="ccm-edit-mode-disabled-item"><?=t('Empty Image Block.')?></div>
 
-    <? } ?>
+    <?php } ?>
 
 </div>

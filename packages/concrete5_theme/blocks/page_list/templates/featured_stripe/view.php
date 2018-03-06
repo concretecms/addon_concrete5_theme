@@ -7,9 +7,9 @@ $c = Page::getCurrentPage();
 $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service\Date */
 ?>
 
-<? if ( $c->isEditMode() && $controller->isBlockEmpty()) { ?>
+<?php if ( $c->isEditMode() && $controller->isBlockEmpty()) { ?>
     <div class="ccm-edit-mode-disabled-item"><?=t('Empty Page List Block.')?></div>
-<? } else { ?>
+<?php } else { ?>
 
     <div class="row c5-featured-stripe">
 
@@ -52,4 +52,4 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
 
     </div><!-- end .ccm-block-page-list -->
 
-<? } ?>
+<?php } ?>

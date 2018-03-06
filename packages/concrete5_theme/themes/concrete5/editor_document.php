@@ -39,7 +39,7 @@ $this->inc('elements/header.php'); ?>
                     <a class="btn btn-default btn-lg" href="<?=URL::to('/contribute/', 'edit', $c->getCollectionID())?>"><?=t('Edit Page')?></a>
                         </p>
                     </div>
-                <? } ?>
+                <?php } ?>
 
             </div>
         </div>
