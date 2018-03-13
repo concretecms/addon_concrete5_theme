@@ -30,6 +30,13 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProvider
         $this->requireAsset('core/lightbox');
     }
 
+    public function getThemeDefaultBlockTemplates()
+    {
+        return [
+            'github_milestones' => 'concrete5_theme.php',
+        ];
+    }
+
     public function getThemeAreaLayoutPresets()
     {
         $presets = array(
