@@ -28,18 +28,13 @@ $this->inc('elements/header.php'); ?>
                 <?php
                 $a = new Area('Sidebar');
                 $a->display($c);
-
-                $inspector = new \Concrete\Package\Concrete5Docs\Page\PageInspector($c);
-                if ($inspector->canEditInDocumentationComposer()) { ?>
-                    <br/>
-                    <div class="well text-muted">
-                        <p style="text-align: center">
+                ?>
+                <div class="well text-muted">
+                    <p style="text-align: center">
                         <?=t('Could this page use improvement? Edit it!')?><br/><br/>
-                    <a class="btn btn-default btn-lg" href="<?=URL::to('/contribute/', 'edit', $c->getCollectionID())?>"><?=t('Edit Page')?></a>
-                        </p>
-                    </div>
-                <?php } ?>
-
+                        <a class="btn btn-default btn-lg" href="<?=URL::to('/contribute/', 'edit', $c->getCollectionID())?>"><?=t('Edit Page')?></a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
