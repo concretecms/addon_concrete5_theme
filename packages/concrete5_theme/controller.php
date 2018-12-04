@@ -11,7 +11,7 @@ class Controller extends Package
 
     protected $pkgHandle = 'concrete5_theme';
     protected $appVersionRequired = '5.7.5';
-    protected $pkgVersion = '0.75';
+    protected $pkgVersion = '0.76';
     protected $pkgAutoloaderMapCoreExtensions = true;
     protected $pkgAutoloaderRegistries = array(
         'src/PortlandLabs' => '\PortlandLabs'
