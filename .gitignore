@@ -2,3 +2,4 @@ build/node_modules
 .idea
 packages/concrete5_theme/themes/concrete5/css/main.css
 vendor
+.DS_Store

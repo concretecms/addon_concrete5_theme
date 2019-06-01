@@ -1,5 +1,5 @@
 <?php
-namespace PortlandLabs\Seo;
+namespace PortlandLabs\Theme\Seo;
 
 use Concrete\Core\Page\Collection\Collection;
 use Concrete\Core\Url\Resolver\Manager\ResolverManagerInterface;

@@ -21,7 +21,7 @@
     </script>
 
     <?php
-    $tags = \Core::make(\PortlandLabs\Seo\MetaTags::class, [$c]);
+    $tags = \Core::make(\PortlandLabs\Theme\Seo\MetaTags::class, [$c]);
     $tags->outputTags();
     ?>
 

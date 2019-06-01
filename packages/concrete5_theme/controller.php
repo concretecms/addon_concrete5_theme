@@ -14,7 +14,7 @@ class Controller extends Package
     protected $pkgVersion = '0.76';
     protected $pkgAutoloaderMapCoreExtensions = true;
     protected $pkgAutoloaderRegistries = array(
-        'src/PortlandLabs' => '\PortlandLabs'
+        'src' => '\PortlandLabs\Theme'
     );
 
     public function getPackageDescription()
