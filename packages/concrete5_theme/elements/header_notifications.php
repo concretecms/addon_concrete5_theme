@@ -13,9 +13,7 @@ $token = \Core::make('token');
                 <?php
                 if ($user && $user->isLoggedIn()) {
                     ?>
-                    <a class="profile-link" href="<?= \URL::to("/contributions") ?>">
-                        <?=t("Your Contributions")?>
-                    </a>
+
                     <a class="profile-link" href="<?= \URL::to("profile:{$user->getUserID()}") ?>">
                         <?= $user->getUserName() ?>
                     </a>
@@ -25,13 +23,10 @@ $token = \Core::make('token');
                     <?php
                 } else {
                     ?>
-                    <a class="profile-link" href="<?= \URL::to("/contribute") ?>">
-                        <?=t("Contribute")?>
-                    </a>
                     <a href="https://www.concrete5.org/register" class="sign-up">
                         <?= t('Join our Community') ?>
                     </a>
-                    <a href="<?= \URL::to('/login') ?>" class="sign-in">
+                    <a href="<?=DIR_REL?>/login" class="sign-in">
                         <?= t('Sign In') ?>
                     </a>
                     <?php
