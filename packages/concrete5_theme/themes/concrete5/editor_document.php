@@ -30,7 +30,7 @@ $this->inc('elements/header.php'); ?>
                 <div class="well text-muted">
                     <p style="text-align: center">
                         <?=t('Could this page use improvement? Edit it!')?><br/><br/>
-                        <a class="btn btn-default btn-lg" href="<?=URL::to('/contribute/', 'edit', $c->getCollectionID())?>"><?=t('Edit Page')?></a>
+                        <a class="btn btn-primary btn-lg" href="<?=URL::to('/contribute/', 'edit', $c->getCollectionID())?>"><i class="fa fa-pencil"></i> <?=t('Edit Page')?></a>
                     </p>
                 </div>
             </div>
