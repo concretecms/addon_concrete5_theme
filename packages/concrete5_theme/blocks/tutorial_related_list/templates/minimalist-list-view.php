@@ -28,13 +28,13 @@ if ($results) {
         $th = $app->make('helper/text');
         ?>
 
-        <div class="ccm-margin-bottom-20">
-            <a href="<?=$result->getCollectionLink()?>" style="margin-right: 10px; font-weight: bold; text-decoration: none;">
+        <div class="ccm-margin-bottom-20 ccm-related-tutorials-list">
+            <a href="<?=$result->getCollectionLink()?>">
                 <?= $result->getCollectionName() ?>
             </a>
             <div>
                 <?= t('Publish on ') . $publishDate ?>
-                <span class="tutorial-list-item-byline"><?= t('By ') ?><a href="#"><?= $username ?>.</a></span>
+                <span class="tutorial-list-item-byline"><?= t('By ') ?><b><?= $username ?>.</b></span>
             </div>
             <div>
                 <p><?= $th->shorten($result->getCollectionDescription(), 100) ?></p>
