@@ -658,7 +658,7 @@ p.c5-right-balance {
   display: block !important;
   white-space: normal !important;
   font-size: 16px !important;
-
+  margin-bottom: 50px !important;
   svg, img {
     display: block;
     fill: #666;
@@ -677,11 +677,20 @@ p.c5-right-balance {
     padding: 20px 0;
   }
 
+  i {
+    display: block;
+    margin:20px 0;
+  }
+
   &:hover {
     background: rgba(255,255,255,0.1);
 
     svg {
       fill: white;
+    }
+
+    i {
+      color: #fff;
     }
 
     p {
@@ -693,6 +702,10 @@ p.c5-right-balance {
 
     svg {
       fill: white;
+    }
+
+    i {
+      color: #fff;
     }
   }
 
@@ -707,11 +720,19 @@ p.c5-right-balance {
       fill: #ccc
     }
 
+    i {
+      color: #ccc;
+    }
+
     &:hover {
       background: rgba(0, 0, 0, 0.1);
 
       svg {
         fill: #333;
+      }
+
+      i {
+        color: #666;
       }
 
       p {
@@ -721,6 +742,9 @@ p.c5-right-balance {
     &:active {
       svg {
         fill: #111;
+      }
+      i {
+        color: #111;
       }
     }
   }
