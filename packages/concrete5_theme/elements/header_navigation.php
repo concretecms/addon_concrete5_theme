@@ -124,7 +124,7 @@
                                 </ul>
                             </li>
                             <li class="">
-                                <a href="http://documentation.concrete5.org">Docs</a>
+                                <a href="https://documentation.concrete5.org">Docs</a>
                                 <ul class="dropdown-menu" aria-labelledby="dLabel">
                                     <li>
                                         <a href="https://documentation.concrete5.org/user-guide">User Guide</a>
