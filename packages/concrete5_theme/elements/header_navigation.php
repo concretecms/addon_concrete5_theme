@@ -127,16 +127,19 @@
                                 <a href="http://documentation.concrete5.org">Docs</a>
                                 <ul class="dropdown-menu" aria-labelledby="dLabel">
                                     <li>
-                                        <a href="http://documentation.concrete5.org/editors">Editors</a>
+                                        <a href="https://documentation.concrete5.org/user-guide">User Guide</a>
                                     </li>
                                     <li>
-                                        <a href="http://documentation.concrete5.org/developers">Developers</a>
+                                        <a href="https://documentation.concrete5.org/developers">Developers</a>
                                     </li>
                                     <li>
-                                        <a href="http://documentation.concrete5.org/tutorials">Tutorials</a>
+                                        <a href="https://documentation.concrete5.org/tutorials">Tutorials</a>
                                     </li>
                                     <li>
-                                        <a href="http://documentation.concrete5.org/api">API</a>
+                                        <a href="https://documentation.concrete5.org/videos">Video Library</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://documentation.concrete5.org/api">API</a>
                                     </li>
                                     <li>
                                         <a href="<?=DIR_REL?>/community/training1">Training &amp; Certification</a>
