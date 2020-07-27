@@ -24,9 +24,6 @@
                                         <a href="<?=DIR_REL?>/about/case-studies">Case Studies</a>
                                     </li>
                                     <li>
-                                        <a href="<?=DIR_REL?>/about/showcase">Showcase</a>
-                                    </li>
-                                    <li>
                                         <a href="<?=DIR_REL?>/about/blog">Blog</a>
                                     </li>
                                     <li>
@@ -61,10 +58,7 @@
                                         <a href="<?=DIR_REL?>/support">Support</a>
                                     </li>
                                     <li>
-                                        <a href="<?=DIR_REL?>/solutions/custom-development">Development</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?=DIR_REL?>/solutions/enterprise-extensions">Enterprise Extensions</a>
+                                        <a href="<?=DIR_REL?>/solutions/partner-network">Partners</a>
                                     </li>
                                     <li>
                                         <a href="<?=DIR_REL?>/solutions/concrete5-education">Education</a>
@@ -75,12 +69,7 @@
                                     <li>
                                         <a href="<?=DIR_REL?>/solutions/concrete5-government">Government</a>
                                     </li>
-                                    <li>
-                                        <a href="<?=DIR_REL?>/solutions/partner-network">Partners</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?=DIR_REL?>/solutions/contact-us">Contact us</a>
-                                    </li>
+
                                 </ul>
                             </li>
                             <li class="">
@@ -107,13 +96,7 @@
                                         <a href="<?=DIR_REL?>/community/forums">Forums</a>
                                     </li>
                                     <li>
-                                        <a href="<?=DIR_REL?>/developers/stack-overflow">StackOverflow</a>
-                                    </li>
-                                    <li>
                                         <a href="<?=DIR_REL?>/community/members">Search Members</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?=DIR_REL?>/developers/bugs">Bug Tracker</a>
                                     </li>
                                     <li>
                                         <a href="<?=DIR_REL?>/developers/submitting-code">Submitting Code</a>
