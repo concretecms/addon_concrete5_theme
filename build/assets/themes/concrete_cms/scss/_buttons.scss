@@ -1,0 +1,10 @@
+/**
+ * @project:   ConcreteCMS Theme
+ *
+ * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+ * @author     Fabian Bitter (fabian@bitter.de)
+ */
+
+.btn-success {
+  @include button-variant($btn-success-background-color, $btn-success-border-color);
+}

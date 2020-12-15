@@ -1,5 +1,7 @@
 build/node_modules
 .idea
-packages/concrete5_theme/themes/concrete5/css/main.css
+packages/concrete5_theme/themes/concrete5/css
+packages/concrete5_theme/themes/concrete5/js
 vendor
 .DS_Store
+mix-manifest.json

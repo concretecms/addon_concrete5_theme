@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concrete5-cif version="1.0">
+    <themes>
+        <theme handle="concrete_cms" package="concrete_cms_theme" activated="1"/>
+    </themes>
+    <sociallinks>
+        <link service="twitter" url="#"/>
+        <link service="facebook" url="#"/>
+        <link service="youtube" url="#"/>
+        <link service="instagram" url="#"/>
+    </sociallinks>
+    <attributekeys>
+        <attributekey handle="page_selector_redirect" name="Page Selector Redirect" package="concrete_cms_theme"
+                      searchable="1"
+                      indexed="0" type="page_selector"
+                      category="collection"/>
+        <attributekey handle="main_area_number" name="Main Area Number" package="concrete_cms_theme"
+                      searchable="1"
+                      indexed="0" type="number"
+                      category="collection"/>
+    </attributekeys>
+    <pagetypes>
+        <pagetype name="Empty Page" handle="page" package="concrete_cms_theme" launch-in-composer="0"
+                  is-frequently-added="1">
+            <pagetemplates type="all" default="full"/>
+            <target handle="all" package="" form-factor=""/>
+            <composer>
+                <formlayout>
+                    <set name="Basics" description="">
+                        <control custom-template="" required="1" custom-label="Page Name" description=""
+                                 type="core_page_property" handle="name"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="description"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="url_slug"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="page_template"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="publish_target"/>
+                    </set>
+                </formlayout>
+                <output>
+                    <pagetemplate handle="blank">
+                        <page name="" path="" public-date="2017-04-16 12:13:18" filename="" pagetype="page"
+                              template="blank" user="admin" description="" package="" root="true"/>
+                    </pagetemplate>
+                    <pagetemplate handle="coming_soon">
+                        <page name="" path="" public-date="2017-05-21 11:57:54" filename="" pagetype="page"
+                              template="coming_soon" user="admin" description="" package="" root="true"/>
+                    </pagetemplate>
+                    <pagetemplate handle="full">
+                        <page name="" path="" public-date="2017-04-16 12:13:16" filename="" pagetype="page"
+                              template="full" user="admin" description="" package="" root="true"/>
+                    </pagetemplate>
+                    <pagetemplate handle="left_sidebar">
+                        <page name="" path="" public-date="2017-04-16 12:13:18" filename="" pagetype="page"
+                              template="left_sidebar" user="admin" description="" package="" root="true"/>
+                    </pagetemplate>
+                    <pagetemplate handle="right_sidebar">
+                        <page name="" path="" public-date="2017-04-16 12:13:18" filename="" pagetype="page"
+                              template="right_sidebar" user="admin" description="" package="" root="true"/>
+                    </pagetemplate>
+                </output>
+            </composer>
+        </pagetype>
+    </pagetypes>
+    <pages>
+        <page name="About" path="/about" public-date="2020-12-15 10:46:00" filename="" pagetype="page" template="full"
+              user="admin" description="" package="">
+            <attributes>
+                <attributekey handle="page_selector_redirect">
+                    <value>/about/about</value>
+                </attributekey>
+            </attributes>
+        </page>
+        <page name="Hosting" path="/hosting" public-date="2020-12-15 10:46:20" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Extensions" path="/extensions" public-date="2020-12-15 10:46:28" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Training" path="/training" public-date="2020-12-15 10:46:36" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Support" path="/support" public-date="2020-12-15 10:46:45" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="About" path="/about/about" public-date="2020-12-15 10:46:53" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Features" path="/about/features" public-date="2020-12-15 10:47:02" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Case Studies" path="/about/case-studies" public-date="2020-12-15 10:47:11" filename=""
+              pagetype="page" template="full" user="admin" description="" package=""/>
+        <page name="Showcase" path="/about/showcase" public-date="2020-12-15 10:47:19" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Testimonials" path="/about/testimonials" public-date="2020-12-15 10:47:27" filename=""
+              pagetype="page" template="full" user="admin" description="" package=""/>
+        <page name="Blog" path="/about/blog" public-date="2020-12-15 10:47:35" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Themes" path="/hosting/themes" public-date="2020-12-15 10:47:45" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Install Add-ons" path="/hosting/install-add-ons" public-date="2020-12-15 10:47:54" filename=""
+              pagetype="page" template="full" user="admin" description="" package=""/>
+        <page name="Hosting" path="/hosting/hosting" public-date="2020-12-15 10:48:03" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Enterprise" path="/hosting/enterprise" public-date="2020-12-15 10:48:10" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Download" path="/hosting/download" public-date="2020-12-15 10:48:22" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Slack" path="/extensions/slack" public-date="2020-12-15 10:48:42" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Forums" path="/extensions/forums" public-date="2020-12-15 10:48:50" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Get Involved" path="/extensions/get-involved" public-date="2020-12-15 10:49:03" filename=""
+              pagetype="page" template="full" user="admin" description="" package=""/>
+        <page name="Job Board" path="/extensions/job-board" public-date="2020-12-15 10:49:13" filename=""
+              pagetype="page" template="full" user="admin" description="" package=""/>
+        <page name="International" path="/extensions/international" public-date="2020-12-15 10:49:21" filename=""
+              pagetype="page" template="full" user="admin" description="" package=""/>
+        <page name="Marketplace News" path="/extensions/marketplace-news" public-date="2020-12-15 10:49:30" filename=""
+              pagetype="page" template="full" user="admin" description="" package=""/>
+        <page name="Security Disclosure" path="/extensions/security-disclosure" public-date="2020-12-15 10:49:39"
+              filename="" pagetype="page" template="full" user="admin" description="" package=""/>
+        <page name="Try Now" path="/training/try-now" public-date="2020-12-15 10:49:48" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Documentation" path="/training/documentation" public-date="2020-12-15 10:49:57" filename=""
+              pagetype="page" template="full" user="admin" description="" package=""/>
+        <page name="Installation" path="/training/installation" public-date="2020-12-15 10:50:05" filename=""
+              pagetype="page" template="full" user="admin" description="" package=""/>
+        <page name="Tutorials" path="/training/tutorials" public-date="2020-12-15 10:50:16" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Training &amp;amp; Certification" path="/training/training-certification"
+              public-date="2020-12-15 10:50:24" filename="" pagetype="page" template="full" user="admin" description=""
+              package=""/>
+        <page name="Privacy Policy" path="/support/privacy-policy" public-date="2020-12-15 10:50:43" filename=""
+              pagetype="page" template="full" user="admin" description="" package=""/>
+        <page name="Terms of Use" path="/support/terms-use" public-date="2020-12-15 10:50:51" filename=""
+              pagetype="page" template="full" user="admin" description="" package=""/>
+        <page name="DMCA Take Down" path="/support/dmca-take-down" public-date="2020-12-15 10:51:01" filename=""
+              pagetype="page" template="full" user="admin" description="" package=""/>
+        <page name="Refund Policy" path="/support/refund-policy" public-date="2020-12-15 10:51:10" filename=""
+              pagetype="page" template="full" user="admin" description="" package=""/>
+        <page name="eNewsletter" path="/support/enewsletter" public-date="2020-12-15 10:51:20" filename=""
+              pagetype="page" template="full" user="admin" description="" package=""/>
+        <page name="Swag" path="/support/swag" public-date="2020-12-15 10:51:28" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+        <page name="Contact Us" path="/support/contact-us" public-date="2020-12-15 10:51:37" filename="" pagetype="page"
+              template="full" user="admin" description="" package=""/>
+    </pages>
+    <stacks>
+        <stack name="Footer Language Switcher" type="global_area" path="/footer-language-switcher">
+            <area name="Main">
+                <blocks/>
+            </area>
+        </stack>
+        <stack name="Footer Legal" type="global_area" path="/footer-legal">
+            <area name="Main">
+                <blocks>
+                    <block type="content" name="">
+                        <data table="btContentLocal">
+                            <record>
+                                <content><![CDATA[<p>PortlandLabsⒸ Copyright 2020</p>
+]]></content>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+        </stack>
+        <stack name="Footer Navigation Column 1" type="global_area" path="/footer-navigation-column-1">
+            <area name="Main">
+                <blocks>
+                    <block type="page_title" name="">
+                        <data table="btPageTitle">
+                            <record>
+                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                <titleText><![CDATA[About]]></titleText>
+                                <formatting><![CDATA[h4]]></formatting>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="autonav" name="" custom-template="footer_navigation">
+                        <data table="btNavigation">
+                            <record>
+                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                <displayPages><![CDATA[custom]]></displayPages>
+                                <displayPagesCID>{ccm:export:page:/about}</displayPagesCID>
+                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                <displaySubPages><![CDATA[none]]></displaySubPages>
+                                <displaySubPageLevels><![CDATA[enough]]></displaySubPageLevels>
+                                <displaySubPageLevelsNum><![CDATA[0]]></displaySubPageLevelsNum>
+                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+        </stack>
+        <stack name="Footer Navigation Column 2" type="global_area" path="/footer-navigation-column-2">
+            <area name="Main">
+                <blocks>
+                    <block type="page_title" name="">
+                        <data table="btPageTitle">
+                            <record>
+                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                <titleText><![CDATA[Hosting]]></titleText>
+                                <formatting><![CDATA[h4]]></formatting>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="autonav" name="" custom-template="footer_navigation">
+                        <data table="btNavigation">
+                            <record>
+                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                <displayPages><![CDATA[custom]]></displayPages>
+                                <displayPagesCID>{ccm:export:page:/hosting}</displayPagesCID>
+                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                <displaySubPages><![CDATA[none]]></displaySubPages>
+                                <displaySubPageLevels><![CDATA[enough]]></displaySubPageLevels>
+                                <displaySubPageLevelsNum><![CDATA[0]]></displaySubPageLevelsNum>
+                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+        </stack>
+        <stack name="Footer Navigation Column 3" type="global_area" path="/footer-navigation-column-3">
+            <area name="Main">
+                <blocks>
+                    <block type="page_title" name="">
+                        <data table="btPageTitle">
+                            <record>
+                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                <titleText><![CDATA[Extensions]]></titleText>
+                                <formatting><![CDATA[h4]]></formatting>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="autonav" name="" custom-template="footer_navigation">
+                        <data table="btNavigation">
+                            <record>
+                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                <displayPages><![CDATA[custom]]></displayPages>
+                                <displayPagesCID>{ccm:export:page:/extensions}</displayPagesCID>
+                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                <displaySubPages><![CDATA[none]]></displaySubPages>
+                                <displaySubPageLevels><![CDATA[enough]]></displaySubPageLevels>
+                                <displaySubPageLevelsNum><![CDATA[0]]></displaySubPageLevelsNum>
+                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+        </stack>
+        <stack name="Footer Navigation Column 4" type="global_area" path="/footer-navigation-column-4">
+            <area name="Main">
+                <blocks>
+                    <block type="page_title" name="">
+                        <data table="btPageTitle">
+                            <record>
+                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                <titleText><![CDATA[Training]]></titleText>
+                                <formatting><![CDATA[h4]]></formatting>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="autonav" name="" custom-template="footer_navigation">
+                        <data table="btNavigation">
+                            <record>
+                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                <displayPages><![CDATA[custom]]></displayPages>
+                                <displayPagesCID>{ccm:export:page:/training}</displayPagesCID>
+                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                <displaySubPages><![CDATA[none]]></displaySubPages>
+                                <displaySubPageLevels><![CDATA[enough]]></displaySubPageLevels>
+                                <displaySubPageLevelsNum><![CDATA[0]]></displaySubPageLevelsNum>
+                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+        </stack>
+        <stack name="Footer Navigation Column 5" type="global_area" path="/footer-navigation-column-5">
+            <area name="Main">
+                <blocks>
+                    <block type="page_title" name="">
+                        <data table="btPageTitle">
+                            <record>
+                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                <titleText><![CDATA[Support]]></titleText>
+                                <formatting><![CDATA[h4]]></formatting>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="autonav" name="" custom-template="footer_navigation">
+                        <data table="btNavigation">
+                            <record>
+                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                <displayPages><![CDATA[custom]]></displayPages>
+                                <displayPagesCID>{ccm:export:page:/support}</displayPagesCID>
+                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                <displaySubPages><![CDATA[none]]></displaySubPages>
+                                <displaySubPageLevels><![CDATA[enough]]></displaySubPageLevels>
+                                <displaySubPageLevelsNum><![CDATA[0]]></displaySubPageLevelsNum>
+                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+        </stack>
+        <stack name="Footer Site Title" type="global_area" path="/footer-site-title">
+            <area name="Main">
+                <blocks>
+                    <block type="image" name="">
+                        <data table="btContentImage">
+                            <record>
+                                <fID>{ccm:export:file:221608026366:logo.com_drk.png}</fID>
+                                <fOnstateID/>
+                                <cropImage><![CDATA[0]]></cropImage>
+                                <maxWidth><![CDATA[0]]></maxWidth>
+                                <maxHeight><![CDATA[0]]></maxHeight>
+                                <externalLink><![CDATA[]]></externalLink>
+                                <internalLinkCID/>
+                                <fileLinkID/>
+                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
+                                <altText><![CDATA[]]></altText>
+                                <title><![CDATA[]]></title>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+        </stack>
+        <stack name="Footer Social" type="global_area" path="/footer-social">
+            <area name="Main">
+                <blocks>
+                    <block type="social_links" name="">
+                        <link service="twitter"/>
+                        <link service="youtube"/>
+                        <link service="facebook"/>
+                        <link service="instagram"/>
+                    </block>
+                </blocks>
+            </area>
+        </stack>
+        <stack name="Header Navigation" type="global_area" path="/header-navigation">
+            <area name="Main">
+                <blocks>
+                    <block type="autonav" name="" custom-template="header_navigation">
+                        <data table="btNavigation">
+                            <record>
+                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                <displayPages><![CDATA[top]]></displayPages>
+                                <displayPagesCID/>
+                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                <displaySubPages><![CDATA[none]]></displaySubPages>
+                                <displaySubPageLevels><![CDATA[enough]]></displaySubPageLevels>
+                                <displaySubPageLevelsNum><![CDATA[0]]></displaySubPageLevelsNum>
+                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+        </stack>
+        <stack name="Header Site Title" type="global_area" path="/header-site-title">
+            <area name="Main">
+                <blocks>
+                    <block type="image" name="">
+                        <data table="btContentImage">
+                            <record>
+                                <fID>{ccm:export:file:221608026366:logo.com_drk.png}</fID>
+                                <fOnstateID/>
+                                <cropImage><![CDATA[0]]></cropImage>
+                                <maxWidth><![CDATA[0]]></maxWidth>
+                                <maxHeight><![CDATA[0]]></maxHeight>
+                                <externalLink><![CDATA[]]></externalLink>
+                                <internalLinkCID/>
+                                <fileLinkID/>
+                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
+                                <altText><![CDATA[]]></altText>
+                                <title><![CDATA[]]></title>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+        </stack>
+    </stacks>
+</concrete5-cif>

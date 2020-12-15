@@ -1,1 +1,1 @@
-Concrete5.org theme for all microsites
+ConcreteCms theme for all micro sites.

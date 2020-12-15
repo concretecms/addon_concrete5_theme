@@ -1,6 +1,8 @@
 {
-    "name": "concrete5/addon_concrete5_theme",
-    "require-dev": {
-        "concrete5/core": "^8.3"
-    }
+  "name": "concrete5/addon_concrete5_theme",
+  "description": "Package that contains the official ConcreteCMS Theme.",
+  "require-dev": {
+    "concrete5/core": "dev-master"
+  },
+  "minimum-stability": "dev"
 }
