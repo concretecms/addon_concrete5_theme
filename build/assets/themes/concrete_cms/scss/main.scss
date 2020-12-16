@@ -4,8 +4,9 @@
  * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
  * @author     Fabian Bitter (fabian@bitter.de)
  */
-
 @import "~@concretecms/bedrock/assets/bedrock/scss/frontend";
+@import "~notosans-fontface/scss/notosans-fontface";
+@import "~@openfonts/poppins_all/index.css";
 
 // Feature support - comes outside div.ccm-page
 @import "./features/basics/basics";
@@ -20,12 +21,21 @@
 
 div.ccm-page {
 
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  main {
+    flex: 1;
+  }
+
   @import "./header";
   @import "./type";
   @import "./buttons";
   @import "./pagination";
   @import "./search";
+  @import "./forms";
+  @import "./dropdowns";
+  @import "./breadcrumbs";
   @import "./footer";
-
 }
-

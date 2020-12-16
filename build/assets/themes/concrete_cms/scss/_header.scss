@@ -6,132 +6,83 @@
  */
 
 header {
+  margin-bottom: 15px;
+  background-color: theme-color('white');
+  height: 80px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
 
-  background-color: $body-bg;
-  padding-top: $header-footer-padding;
-  padding-bottom: $header-footer-padding;
-  border-bottom: 1px solid $border-color;
-
-  #header-site-title {
-
-    transition: color 0.2s linear;
-    font: $font-header-site-title;
-    color: theme-color('primary');
-
-    &:hover {
-      color: darken(theme-color('primary'), 10%);
-      text-decoration: none !important;
+  .header-site-title {
+    img {
+      width: 260px;
+      /*width: 209px; tablet*/
+      height: auto;
     }
   }
 
-  .ccm-search-block-form {
-    position: relative;
-    &:before {
-      content: "\f002";
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
-      display: inline-block;
-      color: $border-color;
+  .navbar {
+    padding: 0;
+    height: 80px;
+
+    .nav-item {
+      &:not(:last-child) {
+        & > a {
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+
+      & > a {
+        font-family: "Poppins";
+        color: theme-color('gray');
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 30px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        min-width: 60px;
+        text-align: center;
+
+        &:hover, &:active, &:focus {
+          color: theme-color('accent');
+          outline: none !important;
+        }
+      }
+
+      &.active {
+        & > a {
+          color: theme-color('accent');
+        }
+      }
+    }
+  }
+
+  #ccm-account-dropdown:focus {
+    &::before {
+      content: " ";
+      width: 60px;
+      height: 20px;
+      background-color: theme-color('white');
       position: absolute;
-      left: 14px;
-      top: 11px;
-      text-decoration: inherit;
+      top: 0;
+      right: 0;
     }
-    .ccm-search-block-text {
-      border-color: $border-color;
-      border-style: solid;
-      border-radius: 30px;
-      padding: 10px 20px 10px 35px;
 
-      &:focus {
-        outline: 0;
-      }
-    }
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
   }
 
-  nav {
-
-    .dropdown{
-      &:after {
-        content: ' ▶';
-      }
-      &:hover {
-        &:after {
-          content:'\25bc';
-        }
-      }
+  div[aria-labelledby='ccm-account-dropdown'] {
+    &::before {
+      content: " ";
+      width: 60px;
+      height: 20px;
+      background-color: theme-color('white');
+      position: absolute;
+      top: -11px;
+      right: 0;
     }
 
-    ul {
-      a {
-        color: theme-color('secondary');
-        padding-right: 40px;
-        font-family: $font-family-header-navigation;
-        font-weight: bold;
-        &:hover {
-          color: lighten(theme-color('secondary'), 40%);
-          text-decoration: none;
-        }
-      }
-      -webkit-font-smoothing:antialiased;
-      list-style: none;
-      margin-top: 10px !important;
-      padding: 0px 0px 0px 0px;
-      float: right;
-
-      li {
-        &:hover {
-          ul {
-            opacity: 1;
-            top: 30px;
-            visibility: visible;
-          }
-        }
-        margin: 0;
-        padding: 0;
-        padding-bottom: 10px;
-        position: relative;
-        display: inline-block;
-        ul {
-          li {
-            &:hover {
-              a {
-                color: theme-color('secondary');
-              }
-            }
-            a {
-              &:hover {
-
-              }
-              color: $gray-500;
-              display: block;
-              padding-bottom: 15px;
-              font-size: 1.0em;
-              text-transform: none;
-              font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-              font-weight: normal;
-            }
-            float: none;
-            width: 100%;
-            padding-bottom: 0px;
-          }
-          cursor: pointer;
-          padding: 15px;
-          padding-bottom: 0px;
-          float: left;
-          left: 0;
-          opacity: 0;
-          position: absolute;
-          top: 20px;
-          visibility: hidden;
-          width: 200px;
-          z-index: 99;
-          transition: all .25s ease;
-          border: 1px solid $border-color;
-          background-color: $body-bg;
-        }
-      }
-    }
+    margin-top: -12px;
+    min-width: 234px;
   }
-
 }

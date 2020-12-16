@@ -5,69 +5,63 @@
  * @author     Fabian Bitter (fabian@bitter.de)
  */
 
-footer#footer-theme {
+footer {
+  background-color: theme-color('white');
+  padding-top: 40px;
+  padding-bottom: 26px;
+  margin-top: 15px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
 
-  margin-top: $hr-margin-y;
-  
-  div.ccm-block-social-links {
-    text-align: right;
-    ul {
+  h4.page-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 19px;
+    color: theme-color('accent');
+  }
+
+  ul.list-unstyled {
+    li {
       a {
-        color: $bullet-color;
-        &:hover {
-          color: darken($bullet-color, 30%);
+        line-height: 44px;
+        font-size: 16px;
+        color: theme-color('text');
+
+        &:hover, &:active, &.nav-selected, &.nav-path-selected {
+          color: theme-color('accent');
         }
       }
     }
   }
 
-  section {
-    border-top: 1px solid $border-color;
-    padding-top: $header-footer-padding;
-    padding-bottom: $header-footer-padding;
+  .footer-social {
+    a {
+      color: theme-color('gray');
+      font-size: 19px;
+      line-height: 40px;
+
+      &:hover {
+        color: theme-color('accent');
+      }
+    }
   }
 
-  section:first-child {
-
+  .footer-site-title {
+    img {
+      height: 40px;
+      width: auto;
+    }
   }
 
-  section:last-child {
-    padding-bottom: $header-footer-padding;
-  }
-
-  #footer-site-title {
-
-    transition: color 0.2s linear;
-    font: $font-footer-site-title;
-    text-transform: uppercase;
-    color: theme-color('primary');
-
-    &:hover {
-      text-decoration: none !important;
+  .footer-legal {
+    p {
+      font-family: "Noto Sans";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 40px;
+      color: theme-color('legal');
+      text-align: right;
+      margin-bottom: 0;
     }
   }
 }
-
-footer#concrete5-brand {
-  background-color: rgba(0,0,0,0.1);
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  a.concrete5 {
-    color: #00baff;
-
-    &:hover {
-      color: #008dc0;
-    }
-  }
-
-  a {
-    color: #9fa7aa;
-
-    &:hover {
-      color: #7B8083;
-    }
-  }
-
-}
-

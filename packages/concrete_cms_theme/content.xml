@@ -142,8 +142,37 @@
               template="full" user="admin" description="" package=""/>
         <page name="Contact Us" path="/support/contact-us" public-date="2020-12-15 10:51:37" filename="" pagetype="page"
               template="full" user="admin" description="" package=""/>
+        <page name="Search" path="/search" public-date="2020-12-15 10:51:37" filename="" pagetype="page"
+              template="full" user="admin" description="" package="">
+            <attributes>
+                <attributekey handle="exclude_nav">
+                    <value>1</value>
+                </attributekey>
+            </attributes>
+        </page>
     </pages>
     <stacks>
+        <stack name="Header Breadcrumb Navigation" type="global_area" path="/header-breadcrumb-navigation">
+            <area name="Main">
+                <blocks>
+                    <block type="autonav" name="" custom-template="breadcrumb_navigation" cache-output="0"
+                           cache-output-lifetime="0" cache-output-on-post="0" cache-output-for-registered-users="0">
+                        <data table="btNavigation">
+                            <record>
+                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                <displayPages><![CDATA[top]]></displayPages>
+                                <displayPagesCID>{ccm:export:page:/about}</displayPagesCID>
+                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                <displaySubPages><![CDATA[relevant_breadcrumb]]></displaySubPages>
+                                <displaySubPageLevels><![CDATA[enough]]></displaySubPageLevels>
+                                <displaySubPageLevelsNum><![CDATA[0]]></displaySubPageLevelsNum>
+                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+        </stack>
         <stack name="Footer Language Switcher" type="global_area" path="/footer-language-switcher">
             <area name="Main">
                 <blocks/>
@@ -155,7 +184,7 @@
                     <block type="content" name="">
                         <data table="btContentLocal">
                             <record>
-                                <content><![CDATA[<p>PortlandLabsⒸ Copyright 2020</p>
+                                <content><![CDATA[<p>PortlandLabsⒸ Copyright 2021</p>
 ]]></content>
                             </record>
                         </data>
@@ -354,7 +383,7 @@
                     <block type="image" name="">
                         <data table="btContentImage">
                             <record>
-                                <fID>{ccm:export:file:221608026366:logo.com_drk.png}</fID>
+                                <fID>{ccm:export:file:221608026366:logo.com_drk.svg}</fID>
                                 <fOnstateID/>
                                 <cropImage><![CDATA[0]]></cropImage>
                                 <maxWidth><![CDATA[0]]></maxWidth>
@@ -383,7 +412,8 @@
                 </blocks>
             </area>
         </stack>
-        <stack name="Header Navigation" type="global_area" path="/header-navigation">
+        <stack name="Header Navigation" type="global_area" path="/header-navigation" cache-output="0"
+               cache-output-lifetime="0" cache-output-on-post="0" cache-output-for-registered-users="0">
             <area name="Main">
                 <blocks>
                     <block type="autonav" name="" custom-template="header_navigation">
@@ -409,7 +439,7 @@
                     <block type="image" name="">
                         <data table="btContentImage">
                             <record>
-                                <fID>{ccm:export:file:221608026366:logo.com_drk.png}</fID>
+                                <fID>{ccm:export:file:221608026366:logo.com_drk.svg}</fID>
                                 <fOnstateID/>
                                 <cropImage><![CDATA[0]]></cropImage>
                                 <maxWidth><![CDATA[0]]></maxWidth>

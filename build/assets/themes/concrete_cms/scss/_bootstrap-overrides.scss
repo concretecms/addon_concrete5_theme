@@ -6,15 +6,47 @@
  */
 
 // ---- Set up our theme colors
-$green: #75ca2a;
-$blue: #0099ff;
-$light-green: #0c6;
+$accent: #017DDD;
+$secondary: #0099ff;
+$light-gray: #F6F8FA;
+$border: #979797;
+$text: #4C4F56;
+$white: #ffffff;
+$dark-gray: #3B3B3B;
+$gray: #828282;
+$legal: #19191A;
+$error: #D11A15;
+$breadcrumb: #A9AAAB;
 
 // ---- Map those to theme conventions
 $theme-colors: (
-  'primary': $green,
-  'secondary': $blue,
-  'light-green': $light-green,
+        'accent': $accent,
+        'secondary': $secondary,
+        'light-gray': $light-gray,
+        'border': $border,
+        'text': $text,
+        'white': $white,
+        'dark-gray': $dark-gray,
+        'gray': $gray,
+        'legal': $legal,
+        'error': $error,
+        'breadcrumb': $breadcrumb
 );
 
 $link-color: theme-color('secondary');
+$link-hover-color: theme-color('secondary');
+$link-hover-decoration: none !default;
+
+$body-bg: $light-gray;
+$headings-color: theme-color('text');
+$headings-font-family: "Poppins";
+$label-color: theme-color('text');
+$font-family-base: 'Noto Sans';
+$alert-border-radius: 0 !default;
+$alert-success-border: $alert-border-radius !default;
+$alert-info-border: $alert-border-radius !default;
+$alert-warning-border: $alert-border-radius !default;
+$alert-danger-border: $alert-border-radius !default;
+$input-border-radius: 0 !default;
+$breadcrumb-color: theme-color('accent') !default;
+$breadcrumb-active-color: theme-color('breadcrumb') !default;

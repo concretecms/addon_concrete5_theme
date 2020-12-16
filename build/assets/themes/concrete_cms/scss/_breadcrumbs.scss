@@ -5,6 +5,14 @@
  * @author     Fabian Bitter (fabian@bitter.de)
  */
 
-main {
+.breadcrumb {
+  font-size: 16px;
+  line-height: 60px;
 
+  > li {
+    + li:before {
+      color: $breadcrumb-active-color;
+      content: ">";
+    }
+  }
 }

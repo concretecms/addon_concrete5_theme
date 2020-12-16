@@ -19,8 +19,17 @@ blockquote {
 
 .title-thin {
   font-family: $font-family-headings;
-  color: $green;
+  color: $accent;
   font-size: $font-size-base * 2;
   font-weight: 300;
   display: block
+}
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  text-transform: uppercase;
 }

@@ -128,7 +128,7 @@
       margin-right: 5px;
       &.rslides_here {
         a {
-          background: theme-color('primary');
+          background: theme-color('accent');
         }
       }
       a {
@@ -153,7 +153,7 @@
     width: 45%;
 
     h2 {
-      color: theme-color('primary');
+      color: theme-color('accent');
       font-family: $font-family-headings;
       font-size: $font-size-base * 3;
       font-weight: 200;

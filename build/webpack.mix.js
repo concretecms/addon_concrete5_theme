@@ -28,11 +28,12 @@ mix.webpackConfig({
                         options: Config.babel()
                     }
                 ]
-            }
+            },
         ]
     }
 });
 
+mix.setResourceRoot('../');
 mix.setPublicPath('../packages/concrete_cms_theme/themes/concrete_cms/');
 
 mix

@@ -11,6 +11,7 @@ namespace Concrete\Package\ConcreteCmsTheme;
 
 use Concrete\Core\Application\UserInterface\Dashboard\Navigation\FavoritesNavigationCache;
 use Concrete\Core\Application\UserInterface\Dashboard\Navigation\NavigationCache;
+use Concrete\Core\Block\Block;
 use Concrete\Core\Config\Repository\Repository;
 use Concrete\Core\Database\Connection\Connection;
 use Concrete\Core\Package\Package;
@@ -103,6 +104,7 @@ class Controller extends Package
         // Enable Public registration
         $config->save('concrete.user.registration.enabled', true);
         $config->save('concrete.user.registration.type', 'enabled');
+        $config->save('user.profiles_enabled', true);
 
         return $pkg;
     }
@@ -114,6 +116,7 @@ class Controller extends Package
         Page::getByPath('/account/edit_profile')->delete();
         Page::getByPath('/account/messages')->delete();
         Page::getByPath('/account/avatar')->delete();
+        Page::getByPath('/members/profile')->delete();
 
         // Install our new content
         $this->installContentFile('desktop.xml');
@@ -127,7 +130,6 @@ class Controller extends Package
         $navigationCache->clear();
         $navigationCache = $this->app->make(FavoritesNavigationCache::class);
         $navigationCache->clear();
-
 
         /*
          * The current content import routine for the attributes is not able to update the values for:
@@ -148,6 +150,43 @@ class Controller extends Package
         /** @noinspection SqlNoDataSourceInspection */
         /** @noinspection PhpUnhandledExceptionInspection */
         $db->executeQuery("UPDATE UserAttributeKeys AS uat LEFT JOIN AttributeKeys AS ak ON (ak.akID = uat.akID) SET uat.uakProfileDisplay = 1, uat.uakProfileEdit = 1 WHERE ak.pkgID = ?", [$this->getPackageEntity()->getPackageID()]);
+
+        /*
+         * The current content import routine for the image block types is not able to set the link.
+         *
+         * So we need to manually set the links.
+         *
+         */
+
+        $homePage = Page::getByID(Page::getHomePageID());
+
+        foreach ($homePage->getGlobalBlocks() as $block) {
+            /** @var Block $block */
+            if ($block->getBlockTypeHandle() === "image") {
+                /** @noinspection SqlDialectInspection */
+                /** @noinspection SqlNoDataSourceInspection */
+                /** @noinspection PhpUnhandledExceptionInspection */
+                $db->executeQuery("UPDATE btContentImage SET internalLinkCID = ? WHERE bID = ?", [$homePage->getCollectionID(), $block->getBlockID()]);
+            }
+        }
+
+        /*
+         * Exclude "/members" from navigation
+         */
+
+        Page::getByPath("/members")->setAttribute("exclude_nav", true);
+
+        /*
+         * Register the search page to the settings
+         */
+
+        $searchPage = Page::getByPath("/search");
+
+        if ($searchPage instanceof Page && !$searchPage->isError()) {
+            /** @var Repository $config */
+            $config = $this->app->make(Repository::class);
+            $config->save("concrete_cms_theme.search_page_id", $searchPage->getCollectionID());
+        }
 
     }
 

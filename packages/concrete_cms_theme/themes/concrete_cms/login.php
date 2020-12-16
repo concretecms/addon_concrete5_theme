@@ -79,6 +79,10 @@ $this->inc('elements/header.php');
             </div>
         </div>
 
+        <h1>
+            <?php echo t("Login"); ?>
+        </h1>
+
         <?php if ($hasRequiredAttributes) { ?>
             <?php /** @noinspection PhpDeprecationInspection */
             $attribute_helper = new Attribute(); ?>

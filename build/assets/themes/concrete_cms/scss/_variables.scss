@@ -5,20 +5,17 @@
  * @author     Fabian Bitter (fabian@bitter.de)
  */
 
-// ---- Fonts
-@import url(//fonts.googleapis.com/css?family=Titillium+Web:200,400,700,900);
-
 // ---- Relative path from the theme's CSS directory to the concrete/ directory
 $concrete-path: '/Users/fabianbitter/Projekte/concrete5/core/9.0.0/concrete'; // @todo: change me
 
 // ---- Theme variables
 $primary-margin-y: 100px;
 $header-footer-padding: 30px;
-$font-header-site-title: normal ($font-size-base * 2) 'Titillium Web';
-$font-footer-site-title: 700 $font-size-base 'Titillium Web';
-$font-family-footer-site-title: 'Titillium Web';
-$font-family-headings: 'Titillium Web';
-$font-family-header-navigation: 'Titillium Web';
+$font-header-site-title: normal ($font-size-base * 2) "Noto Sans", sans-serif;
+$font-footer-site-title: 700 $font-size-base "Noto Sans", sans-serif;
+$font-family-footer-site-title: "Noto Sans", sans-serif;
+$font-family-headings: "Noto Sans", sans-serif;
+$font-family-header-navigation: "Noto Sans", sans-serif;
 
 // hr
 $hr-margin-y: $primary-margin-y;
@@ -28,8 +25,15 @@ $hr-border-color: $gray-300;
 $btn-border-radius: 20px;
 $btn-padding-x: 30px;
 $btn-padding-y: 10px;
-$btn-success-background-color: theme-color('light-green');
+$btn-success-background-color: theme-color('accent');
 $btn-success-border-color: #4cae4c;
+
+$btn-default-background-color: transparent;
+$btn-default-border-color: theme-color('border');
+$btn-primary-background-color: theme-color('accent');
+$btn-primary-border-color: theme-color('accent');
+$btn-danger-background-color: theme-color('error');
+$btn-danger-border-color: theme-color('error');
 
 // colors
 $border-color: $gray-300;

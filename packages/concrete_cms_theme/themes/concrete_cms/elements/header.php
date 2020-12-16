@@ -36,7 +36,7 @@ use Concrete\Core\View\View;
 <div class="<?php echo $c->getPageWrapperClass() ?>">
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="navbar-brand">
                     <div class="header-site-title">
                         <?php
@@ -53,7 +53,7 @@ use Concrete\Core\View\View;
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="header-navigation">
+                    <div class="header-navigation ml-auto">
                         <?php
                         $a = new GlobalArea('Header Navigation');
                         $a->display($c);
@@ -63,3 +63,16 @@ use Concrete\Core\View\View;
             </nav>
         </div>
     </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="breadcrumb-navigation">
+                    <?php
+                    $a = new GlobalArea('Header Breadcrumb Navigation');
+                    $a->display($c);
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
