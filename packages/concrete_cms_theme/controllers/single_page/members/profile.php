@@ -13,5 +13,12 @@ use Concrete\Controller\SinglePage\Members\Profile as CoreProfile;
 
 class Profile extends CoreProfile
 {
+    public function on_start()
+    {
+
+        $this->set('exclude_breadcrumb', true);
+
+        return parent::on_start();
+    }
 
 }

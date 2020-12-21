@@ -195,23 +195,6 @@
         <stack name="Footer Navigation Column 1" type="global_area" path="/footer-navigation-column-1">
             <area name="Main">
                 <blocks>
-                    <block type="page_title" name="">
-                        <data table="btPageTitle">
-                            <record>
-                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
-                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
-                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
-                                <useFilterTag><![CDATA[0]]></useFilterTag>
-                                <useFilterDate><![CDATA[0]]></useFilterDate>
-                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
-                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
-                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
-                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
-                                <titleText><![CDATA[About]]></titleText>
-                                <formatting><![CDATA[h4]]></formatting>
-                            </record>
-                        </data>
-                    </block>
                     <block type="autonav" name="" custom-template="footer_navigation">
                         <data table="btNavigation">
                             <record>
@@ -232,23 +215,6 @@
         <stack name="Footer Navigation Column 2" type="global_area" path="/footer-navigation-column-2">
             <area name="Main">
                 <blocks>
-                    <block type="page_title" name="">
-                        <data table="btPageTitle">
-                            <record>
-                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
-                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
-                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
-                                <useFilterTag><![CDATA[0]]></useFilterTag>
-                                <useFilterDate><![CDATA[0]]></useFilterDate>
-                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
-                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
-                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
-                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
-                                <titleText><![CDATA[Hosting]]></titleText>
-                                <formatting><![CDATA[h4]]></formatting>
-                            </record>
-                        </data>
-                    </block>
                     <block type="autonav" name="" custom-template="footer_navigation">
                         <data table="btNavigation">
                             <record>
@@ -269,23 +235,6 @@
         <stack name="Footer Navigation Column 3" type="global_area" path="/footer-navigation-column-3">
             <area name="Main">
                 <blocks>
-                    <block type="page_title" name="">
-                        <data table="btPageTitle">
-                            <record>
-                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
-                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
-                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
-                                <useFilterTag><![CDATA[0]]></useFilterTag>
-                                <useFilterDate><![CDATA[0]]></useFilterDate>
-                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
-                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
-                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
-                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
-                                <titleText><![CDATA[Extensions]]></titleText>
-                                <formatting><![CDATA[h4]]></formatting>
-                            </record>
-                        </data>
-                    </block>
                     <block type="autonav" name="" custom-template="footer_navigation">
                         <data table="btNavigation">
                             <record>
@@ -306,23 +255,6 @@
         <stack name="Footer Navigation Column 4" type="global_area" path="/footer-navigation-column-4">
             <area name="Main">
                 <blocks>
-                    <block type="page_title" name="">
-                        <data table="btPageTitle">
-                            <record>
-                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
-                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
-                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
-                                <useFilterTag><![CDATA[0]]></useFilterTag>
-                                <useFilterDate><![CDATA[0]]></useFilterDate>
-                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
-                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
-                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
-                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
-                                <titleText><![CDATA[Training]]></titleText>
-                                <formatting><![CDATA[h4]]></formatting>
-                            </record>
-                        </data>
-                    </block>
                     <block type="autonav" name="" custom-template="footer_navigation">
                         <data table="btNavigation">
                             <record>
@@ -343,23 +275,6 @@
         <stack name="Footer Navigation Column 5" type="global_area" path="/footer-navigation-column-5">
             <area name="Main">
                 <blocks>
-                    <block type="page_title" name="">
-                        <data table="btPageTitle">
-                            <record>
-                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
-                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
-                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
-                                <useFilterTag><![CDATA[0]]></useFilterTag>
-                                <useFilterDate><![CDATA[0]]></useFilterDate>
-                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
-                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
-                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
-                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
-                                <titleText><![CDATA[Support]]></titleText>
-                                <formatting><![CDATA[h4]]></formatting>
-                            </record>
-                        </data>
-                    </block>
                     <block type="autonav" name="" custom-template="footer_navigation">
                         <data table="btNavigation">
                             <record>

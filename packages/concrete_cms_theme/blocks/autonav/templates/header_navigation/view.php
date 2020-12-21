@@ -28,6 +28,8 @@ $token = $app->make(Token::class);
 
 $navItems = $controller->getNavItems();
 
+$topLevelIndexCounter = 0;
+
 foreach ($navItems as $ni) {
     $classes = [];
 
@@ -40,6 +42,11 @@ foreach ($navItems as $ni) {
     if ($ni->hasSubmenu) {
         //class for items that have dropdown sub-menus
         $classes[] = 'dropdown';
+    }
+
+    if ($ni->level == 1) {
+        $topLevelIndexCounter++;
+        $classes[] = 'index-' . $topLevelIndexCounter;
     }
 
     //Put all classes together into one space-separated string
@@ -95,7 +102,7 @@ $searchPageId = (int)$config->get("concrete_cms_theme.search_page_id");
 $searchPage = Page::getByID($searchPageId);
 
 if ($searchPage instanceof Page && !$searchPage->isError()) {
-    echo '<li class="nav-item' . (in_array($searchPage->getCollectionID(), $selectedPathCIDs) ? " active"  : "") . '">';
+    echo '<li class="d-none d-lg-block nav-item' . (in_array($searchPage->getCollectionID(), $selectedPathCIDs) ? " active"  : "") . '">';
     echo '<a href="' . (string)Url::to($searchPage) . '" title="' . h(t("Search")) . '" class="nav-link"><i class="fas fa-search"></i></a>';
     echo '</li>';
 }
@@ -105,7 +112,7 @@ $user = new User();
 $accountPage = Page::getByPath('/account');
 
 if ($user->isRegistered()) {
-    echo '<li class="nav-item' . (in_array($accountPage->getCollectionID(), $selectedPathCIDs) ? " active"  : "") . '">';
+    echo '<li class="d-none d-lg-block nav-item' . (in_array($accountPage->getCollectionID(), $selectedPathCIDs) ? " active"  : "") . '">';
     echo '<a href="javascript:void(0);" title="' . h(t("Profile")) . '" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="ccm-account-dropdown"><i class="fas fa-user"></i></a>';
 
     echo '<div class="dropdown-menu dropdown-menu-right" aria-labelledby="ccm-account-dropdown">';
@@ -129,7 +136,7 @@ if ($user->isRegistered()) {
     echo '</div>';
     echo '</li>';
 } else {
-    echo '<li class="nav-item' . (in_array($accountPage->getCollectionID(), $selectedPathCIDs) ? " active"  : "") . '">';
+    echo '<li class="d-none d-lg-block nav-item' . (in_array($accountPage->getCollectionID(), $selectedPathCIDs) ? " active"  : "") . '">';
     echo '<a href="' . (string)Url::to('/login') . '" title="' . h(t("Sign In")) . '" class="nav-link"><i class="fas fa-user"></i></a>';
     echo '</li>';
 

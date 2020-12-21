@@ -149,7 +149,7 @@ class Controller extends Package
         /** @noinspection SqlDialectInspection */
         /** @noinspection SqlNoDataSourceInspection */
         /** @noinspection PhpUnhandledExceptionInspection */
-        $db->executeQuery("UPDATE UserAttributeKeys AS uat LEFT JOIN AttributeKeys AS ak ON (ak.akID = uat.akID) SET uat.uakProfileDisplay = 1, uat.uakProfileEdit = 1 WHERE ak.pkgID = ?", [$this->getPackageEntity()->getPackageID()]);
+        $db->executeQuery("UPDATE UserAttributeKeys AS uat LEFT JOIN AttributeKeys AS ak ON (ak.akID = uat.akID) SET uat.uakProfileDisplay = 1, uat.uakProfileEdit = 1 WHERE ak.pkgID = ? AND ak.akHandle != 'header_image'", [$this->getPackageEntity()->getPackageID()]);
 
         /*
          * The current content import routine for the image block types is not able to set the link.

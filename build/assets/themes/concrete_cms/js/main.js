@@ -14,3 +14,15 @@ import '@concretecms/bedrock/assets/calendar/js/frontend';
 import '@concretecms/bedrock/assets/navigation/js/frontend';
 import '@concretecms/bedrock/assets/conversations/js/frontend';
 import '@concretecms/bedrock/assets/imagery/js/frontend';
+
+$("#ccm-toggle-mobile-nav").click(function (e) {
+    e.preventDefault();
+
+    const activeClass = "is-active";
+
+    if ($(this).hasClass(activeClass)) {
+        $(this).removeClass(activeClass);
+    } else {
+        $(this).addClass(activeClass);
+    }
+});

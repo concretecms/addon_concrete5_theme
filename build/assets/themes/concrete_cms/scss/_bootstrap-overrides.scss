@@ -17,6 +17,10 @@ $gray: #828282;
 $legal: #19191A;
 $error: #D11A15;
 $breadcrumb: #A9AAAB;
+$mobile-nav: #363636;
+$card-border: #D8D8D8;
+$card-headlines: #7C8088;
+$header-image-background: #e4e4e4;
 
 // ---- Map those to theme conventions
 $theme-colors: (
@@ -30,7 +34,11 @@ $theme-colors: (
         'gray': $gray,
         'legal': $legal,
         'error': $error,
-        'breadcrumb': $breadcrumb
+        'breadcrumb': $breadcrumb,
+        'mobile-nav': $mobile-nav,
+        'card-border': $card-border,
+        'card-headlines': $card-headlines,
+        'header-image-background': $header-image-background
 );
 
 $link-color: theme-color('secondary');

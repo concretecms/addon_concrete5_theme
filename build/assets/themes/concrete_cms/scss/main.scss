@@ -18,6 +18,7 @@
 @import "./features/search/search";
 @import "./features/testimonials/testimonials";
 @import "./features/taxonomy/taxonomy";
+@import "./features/members/public_profile";
 
 div.ccm-page {
 
@@ -37,5 +38,6 @@ div.ccm-page {
   @import "./forms";
   @import "./dropdowns";
   @import "./breadcrumbs";
+  @import "./card";
   @import "./footer";
 }

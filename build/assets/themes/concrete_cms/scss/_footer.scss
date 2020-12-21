@@ -64,4 +64,36 @@ footer {
       margin-bottom: 0;
     }
   }
+
+
+  /* Tablet + Mobile */
+  @include media-breakpoint-down(sm) {
+
+    h4.page-title {
+      position: relative;
+      height: 22px;
+      line-height: 22px;
+
+      border-bottom: 1px solid theme-color('light-gray');
+      padding-bottom: 35px;
+
+      &::after {
+        content : "\f078";
+        font-family: "Font Awesome 5 Free";
+        position: absolute;
+        right: 0;
+        height: 22px;
+        line-height: 22px;
+        width: 22px;
+        color: theme-color('gray');
+      }
+
+      &[aria-expanded="true"] {
+        &::after {
+          content : "\f077";
+        }
+      }
+    }
+
+  }
 }

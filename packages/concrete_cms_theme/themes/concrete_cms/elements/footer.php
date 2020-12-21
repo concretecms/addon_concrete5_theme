@@ -18,7 +18,7 @@ use Concrete\Core\View\View;
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-sm">
+            <div class="col-md">
                 <div class="footer-navigation">
                     <?php
                     $a = new GlobalArea('Footer Navigation Column 1');
@@ -27,7 +27,7 @@ use Concrete\Core\View\View;
                 </div>
             </div>
 
-            <div class="col-sm">
+            <div class="col-md">
                 <div class="footer-navigation">
                     <?php
                     $a = new GlobalArea('Footer Navigation Column 2');
@@ -36,7 +36,7 @@ use Concrete\Core\View\View;
                 </div>
             </div>
 
-            <div class="col-sm">
+            <div class="col-md">
                 <div class="footer-navigation">
                     <?php
                     $a = new GlobalArea('Footer Navigation Column 3');
@@ -45,7 +45,7 @@ use Concrete\Core\View\View;
                 </div>
             </div>
 
-            <div class="col-sm">
+            <div class="col-md">
                 <div class="footer-navigation">
                     <?php
                     $a = new GlobalArea('Footer Navigation Column 4');
@@ -54,7 +54,7 @@ use Concrete\Core\View\View;
                 </div>
             </div>
 
-            <div class="col-sm">
+            <div class="col-md">
                 <div class="footer-navigation">
                     <?php
                     $a = new GlobalArea('Footer Navigation Column 5');

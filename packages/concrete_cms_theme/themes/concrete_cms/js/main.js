@@ -115,6 +115,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+$("#ccm-toggle-mobile-nav").click(function (e) {
+  e.preventDefault();
+  var activeClass = "is-active";
+
+  if ($(this).hasClass(activeClass)) {
+    $(this).removeClass(activeClass);
+  } else {
+    $(this).addClass(activeClass);
+  }
+});
 
 /***/ }),
 

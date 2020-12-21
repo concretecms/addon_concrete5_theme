@@ -55,6 +55,10 @@
         </page>
     </singlepages>
     <attributekeys>
+        <attributekey handle="header_image" name="Header Image" package="concrete_cms_theme" searchable="1" indexed="1" type="image_file"
+                      category="user">
+            <type placeholder=""/>
+        </attributekey>
         <attributekey handle="profile_private_messages_enabled" name="Private Messages" package="concrete_cms_theme"
                       searchable="1"
                       indexed="1" type="boolean" category="user">
