@@ -17634,6 +17634,7 @@ ul.ccm-block-topic-list-page-topics li {
  */
 
 .public-profile {
+  margin-top: -15px;
   /* Mobile */
 }
 
@@ -17744,6 +17745,128 @@ ul.ccm-block-topic-list-page-topics li {
   }
 }
 
+/**
+ * @project:   ConcreteCMS Theme
+ *
+ * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+ * @author     Fabian Bitter (fabian@bitter.de)
+ */
+
+.edit-profile {
+  /* Mobile */
+}
+
+.edit-profile h1 {
+  color: #017DDD;
+}
+
+.edit-profile form {
+  display: inline;
+}
+
+.edit-profile form label {
+  margin-bottom: 0;
+}
+
+.edit-profile .profile-header-image {
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  background-color: #e4e4e4;
+  position: relative;
+}
+
+.edit-profile .profile-header-image .profile-header-actions {
+  bottom: 15px;
+  right: 15px;
+  position: absolute;
+}
+
+.edit-profile .profile-header-image img {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+.edit-profile [type=file] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.edit-profile [type=file] + label {
+  /* File upload button styles */
+}
+
+.edit-profile [type=file]:focus + label,
+.edit-profile [type=file] + label:hover {
+  /* File upload hover state button styles */
+}
+
+.edit-profile [type=file]:focus + label {
+  /* File upload focus state button styles */
+}
+
+.edit-profile .profile-meta {
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.02);
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.edit-profile .profile-meta .profile-image {
+  position: relative;
+}
+
+.edit-profile .profile-meta .profile-image .profile-image-actions {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  margin: 50px;
+  width: 180px;
+}
+
+.edit-profile .profile-meta .profile-image .profile-image-actions .btn-danger {
+  margin-bottom: 15px;
+}
+
+.edit-profile .profile-meta .profile-image img {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  margin-top: -140px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.02);
+}
+
+.edit-profile #ccm-edit-profile-form {
+  margin-top: 30px;
+  display: block;
+}
+
+@media (max-width: 767.98px) {
+  .edit-profile .profile-header-image {
+    height: 212px;
+  }
+
+  .edit-profile .profile-header-image .btn {
+    display: none;
+  }
+
+  .edit-profile .profile-meta .profile-image img {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+  }
+
+  .edit-profile .profile-meta .profile-image .btn {
+    display: none;
+  }
+}
+
 div.ccm-page {
   display: flex;
   min-height: 100vh;
@@ -17822,6 +17945,7 @@ div.ccm-page {
 
 div.ccm-page main {
   flex: 1;
+  margin-top: 15px;
 }
 
 div.ccm-page .hamburger {
@@ -18292,8 +18416,8 @@ div.ccm-page .btn-success:not(:disabled):not(.disabled).active:focus,
 
 div.ccm-page .btn,
 div.ccm-page .btn-secondary {
-  color: #ffffff;
-  background-color: transparent;
+  color: #212529;
+  background-color: #ffffff;
   border-color: #979797;
   color: #017DDD !important;
   font-weight: bold !important;
@@ -18303,8 +18427,8 @@ div.ccm-page .btn-secondary {
 
 div.ccm-page .btn:hover,
 div.ccm-page .btn-secondary:hover {
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0);
+  color: #212529;
+  background-color: #ececec;
   border-color: #7e7e7e;
 }
 
@@ -18312,18 +18436,18 @@ div.ccm-page .btn:focus,
 div.ccm-page .btn.focus,
 div.ccm-page .btn-secondary:focus,
 div.ccm-page .btn-secondary.focus {
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0);
+  color: #212529;
+  background-color: #ececec;
   border-color: #7e7e7e;
-  box-shadow: 0 0 0 0.2rem rgba(167, 167, 167, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(133, 134, 135, 0.5);
 }
 
 div.ccm-page .btn.disabled,
 div.ccm-page .btn:disabled,
 div.ccm-page .btn-secondary.disabled,
 div.ccm-page .btn-secondary:disabled {
-  color: #ffffff;
-  background-color: transparent;
+  color: #212529;
+  background-color: #ffffff;
   border-color: #979797;
 }
 
@@ -18333,8 +18457,8 @@ div.ccm-page .btn:not(:disabled):not(.disabled).active,
 div.ccm-page .btn-secondary:not(:disabled):not(.disabled):active,
 div.ccm-page .btn-secondary:not(:disabled):not(.disabled).active,
 .show > div.ccm-page .btn-secondary.dropdown-toggle {
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0);
+  color: #212529;
+  background-color: #e6e6e6;
   border-color: #777777;
 }
 
@@ -18344,7 +18468,7 @@ div.ccm-page .btn:not(:disabled):not(.disabled).active:focus,
 div.ccm-page .btn-secondary:not(:disabled):not(.disabled):active:focus,
 div.ccm-page .btn-secondary:not(:disabled):not(.disabled).active:focus,
 .show > div.ccm-page .btn-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(167, 167, 167, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(133, 134, 135, 0.5);
 }
 
 div.ccm-page .btn:hover,
@@ -18355,7 +18479,7 @@ div.ccm-page .btn-secondary:focus,
 div.ccm-page .btn-secondary.focus {
   color: #017DDD !important;
   border-color: #979797 !important;
-  background-color: transparent !important;
+  background-color: #ffffff !important;
   outline: none !important;
   box-shadow: none !important;
 }
@@ -18374,7 +18498,7 @@ div.ccm-page .btn-secondary.active:focus,
 div.ccm-page .btn-secondary.active.focus {
   color: #017DDD !important;
   border-color: #979797 !important;
-  background-color: transparent !important;
+  background-color: #ffffff !important;
   outline: none !important;
   box-shadow: none !important;
 }
@@ -18385,7 +18509,7 @@ div.ccm-page .btn-secondary:active,
 div.ccm-page .btn-secondary.active {
   color: #017DDD !important;
   border-color: #979797 !important;
-  background-color: transparent !important;
+  background-color: #ffffff !important;
   outline: none !important;
   box-shadow: none !important;
 }
@@ -18652,7 +18776,7 @@ div.ccm-page .dropdown-item.active {
 
 div.ccm-page .breadcrumb {
   font-size: 16px;
-  line-height: 60px;
+  line-height: 40px;
 }
 
 div.ccm-page .breadcrumb > li + li:before {

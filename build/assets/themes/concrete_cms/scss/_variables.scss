@@ -28,7 +28,7 @@ $btn-padding-y: 10px;
 $btn-success-background-color: theme-color('accent');
 $btn-success-border-color: #4cae4c;
 
-$btn-default-background-color: transparent;
+$btn-default-background-color: theme-color('white');
 $btn-default-border-color: theme-color('border');
 $btn-primary-background-color: theme-color('accent');
 $btn-primary-border-color: theme-color('accent');

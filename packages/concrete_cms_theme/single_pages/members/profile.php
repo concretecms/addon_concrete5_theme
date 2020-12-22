@@ -216,48 +216,44 @@ $isOwnProfile = $profile->getUserID() == $user->getUserID();
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title">
+                <?php if (count($badges) > 0) { ?>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
                             <span>
                                 <?php echo t("Badges"); ?>
                             </span>
 
-                            <?php if ($earnBadgesPage instanceof Page && !$earnBadgesPage->isError()) { ?>
-                                <a href="<?php echo (string)Url::to($earnBadgesPage) ?>"
-                                   class="btn btn-sm btn-secondary float-right">
-                                    <?php echo t("Earn Badges"); ?>
-                                </a>
-                            <?php } ?>
-                        </div>
-                    </div>
-
-                    <div class="card-text">
-                        <div class="row">
-                            <div class="col">
-                                <div class="profile-badges">
-                                    <?php if (count($badges) > 0) { ?>
-                                    <?php foreach ($badges as $ub) { ?>
-                                        <?php /** @var File $uf */
-                                        $uf = $ub->getGroupBadgeImageObject(); ?>
-
-                                        <?php if (is_object($uf)) { ?>
-                                            <div class="profile-badge">
-                                                <img src="<?php echo $uf->getApprovedVersion()->getRelativePath() ?>"
-                                                     alt="<?php echo h($ub->getGroupBadgeDescription()) ?>"/>
-                                            </div>
-                                        <?php } ?>
-                                    <?php } ?>
-                                </div>
-                                <?php } else { ?>
-                                    <p class="text-muted">
-                                        <?php echo t("This user hasn't won any badges.") ?>
-                                    </p>
+                                <?php if ($earnBadgesPage instanceof Page && !$earnBadgesPage->isError()) { ?>
+                                    <a href="<?php echo (string)Url::to($earnBadgesPage) ?>"
+                                       class="btn btn-sm btn-secondary float-right">
+                                        <?php echo t("Earn Badges"); ?>
+                                    </a>
                                 <?php } ?>
                             </div>
                         </div>
+
+                        <div class="card-text">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="profile-badges">
+                                        <?php foreach ($badges as $ub) { ?>
+                                            <?php /** @var File $uf */
+                                            $uf = $ub->getGroupBadgeImageObject(); ?>
+
+                                            <?php if (is_object($uf)) { ?>
+                                                <div class="profile-badge">
+                                                    <img src="<?php echo $uf->getApprovedVersion()->getRelativePath() ?>"
+                                                         alt="<?php echo h($ub->getGroupBadgeDescription()) ?>"/>
+                                                </div>
+                                            <?php } ?>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                <?php } ?>
             </div>
         </div>
     </div>

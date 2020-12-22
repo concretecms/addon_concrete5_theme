@@ -15,7 +15,6 @@ use Concrete\Core\Html\Service\Navigation;
 use Concrete\Core\Http\Response;
 use Concrete\Core\Http\ResponseFactory;
 use Concrete\Core\Page\Page;
-use Concrete\Core\Page\Theme\ThemeRouteCollection;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 class ServiceProvider extends Provider

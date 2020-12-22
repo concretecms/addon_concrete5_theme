@@ -19,6 +19,7 @@
 @import "./features/testimonials/testimonials";
 @import "./features/taxonomy/taxonomy";
 @import "./features/members/public_profile";
+@import "./features/account/edit_profile";
 
 div.ccm-page {
 
@@ -28,6 +29,7 @@ div.ccm-page {
 
   main {
     flex: 1;
+    margin-top: 15px;
   }
 
   @import "./header";
