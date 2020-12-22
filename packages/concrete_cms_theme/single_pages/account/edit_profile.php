@@ -105,7 +105,9 @@ $profileFormRenderer->setContext(new FrontendFormContext());
                             </form>
                         </div>
 
-                        <?php echo $profile->getUserAvatar()->output(); ?>
+                        <div class="image-wrapper">
+                            <?php echo $profile->getUserAvatar()->output(); ?>
+                        </div>
                     </div>
 
                     <div class="clearfix"></div>

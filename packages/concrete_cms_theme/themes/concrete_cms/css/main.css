@@ -17662,12 +17662,19 @@ ul.ccm-block-topic-list-page-topics li {
   margin-bottom: 15px;
 }
 
-.public-profile .profile-image img {
+.public-profile .profile-image .image-wrapper {
   border-radius: 50%;
   width: 280px;
   height: 280px;
   margin-top: -140px;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.02);
+  overflow: hidden;
+}
+
+.public-profile .profile-image .image-wrapper img {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
 .public-profile .profile-intro {
@@ -17710,7 +17717,7 @@ ul.ccm-block-topic-list-page-topics li {
     height: 212px;
   }
 
-  .public-profile .profile-image img {
+  .public-profile .profile-image .image-wrapper {
     width: 100px;
     height: 100px;
     margin-top: -50px;
@@ -17820,6 +17827,7 @@ ul.ccm-block-topic-list-page-topics li {
 
 .edit-profile .profile-meta .profile-image {
   position: relative;
+  width: 200px;
 }
 
 .edit-profile .profile-meta .profile-image .profile-image-actions {
@@ -17834,12 +17842,19 @@ ul.ccm-block-topic-list-page-topics li {
   margin-bottom: 15px;
 }
 
-.edit-profile .profile-meta .profile-image img {
+.edit-profile .profile-meta .profile-image .image-wrapper {
   border-radius: 50%;
   width: 280px;
   height: 280px;
   margin-top: -140px;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.02);
+  overflow: hidden;
+}
+
+.edit-profile .profile-meta .profile-image .image-wrapper img {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
 .edit-profile #ccm-edit-profile-form {
@@ -17856,7 +17871,7 @@ ul.ccm-block-topic-list-page-topics li {
     display: none;
   }
 
-  .edit-profile .profile-meta .profile-image img {
+  .edit-profile .profile-meta .profile-image .image-wrapper {
     width: 100px;
     height: 100px;
     margin-top: -50px;

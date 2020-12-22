@@ -72,7 +72,9 @@ $isOwnProfile = $profile->getUserID() == $user->getUserID();
             <div class="col">
                 <div class="profile-meta">
                     <div class="profile-image">
-                        <?php echo $profile->getUserAvatar()->output(); ?>
+                        <div class="image-wrapper">
+                            <?php echo $profile->getUserAvatar()->output(); ?>
+                        </div>
                     </div>
 
                     <div class="profile-intro">
