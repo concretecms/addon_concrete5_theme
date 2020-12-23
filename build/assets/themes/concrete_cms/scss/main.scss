@@ -4,9 +4,14 @@
  * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
  * @author     Fabian Bitter (fabian@bitter.de)
  */
+
 @import "~@concretecms/bedrock/assets/bedrock/scss/frontend";
 @import "~notosans-fontface/scss/notosans-fontface";
 @import "~@openfonts/poppins_all/index.css";
+@import '~@pnotify/core/dist/PNotify.css';
+@import '~@pnotify/bootstrap4/dist/PNotifyBootstrap4.css';
+@import '~bootstrap-select/dist/css/bootstrap-select.css';
+@import '~ajax-bootstrap-select/dist/css/ajax-bootstrap-select.min.css';
 
 // Feature support - comes outside div.ccm-page
 @import "./features/basics/basics";
@@ -20,6 +25,7 @@
 @import "./features/taxonomy/taxonomy";
 @import "./features/members/public_profile";
 @import "./features/account/edit_profile";
+@import "./features/account/messages";
 
 div.ccm-page {
 
@@ -39,7 +45,10 @@ div.ccm-page {
   @import "./search";
   @import "./forms";
   @import "./dropdowns";
+  @import "./modals";
+  @import "./bootstrap-select";
   @import "./breadcrumbs";
   @import "./card";
+  @import "./navs";
   @import "./footer";
 }

@@ -10,7 +10,6 @@
 defined('C5_EXECUTE') or die("Access Denied.");
 
 use Concrete\Core\Area\GlobalArea;
-use Concrete\Core\Block\BlockType\BlockType;
 use Concrete\Core\Localization\Localization;
 use Concrete\Core\Page\Page;
 use Concrete\Core\Support\Facade\Url;

@@ -108,7 +108,7 @@ $isOwnProfile = $profile->getUserID() == $user->getUserID();
 
                                 <?php if (!$isOwnProfile) { ?>
                                     <a href="javascript:void(0);" class="btn btn-primary send-message"
-                                       data-profile-id="<?php echo h($profile->getUserID()); ?>">
+                                       data-receiver="<?php echo h($profile->getUserID()); ?>">
                                         <?php echo t("Send Message"); ?>
                                     </a>
                                 <?php } ?>

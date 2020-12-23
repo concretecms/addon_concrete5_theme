@@ -11,6 +11,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 
 use Concrete\Core\Area\GlobalArea;
 use Concrete\Core\View\View;
+use Concrete\Core\Support\Facade\Url;
 
 /** @var View $view */
 
@@ -110,6 +111,7 @@ use Concrete\Core\View\View;
 /** @noinspection PhpUnhandledExceptionInspection */
 View::element('footer_required');
 ?>
+<script src="<?php echo (string)Url::to("/community/js"); ?>"></script>
 <!--suppress HtmlUnknownTarget -->
 <script type="text/javascript" src="<?php echo $view->getThemePath() ?>/js/main.js"></script>
 </body>

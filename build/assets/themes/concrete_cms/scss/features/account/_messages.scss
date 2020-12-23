@@ -1,0 +1,33 @@
+/**
+ * @project:   ConcreteCMS Theme
+ *
+ * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+ * @author     Fabian Bitter (fabian@bitter.de)
+ */
+
+.messages {
+  h1 {
+    color: theme-color('accent');
+  }
+
+  .message-table {
+    margin-top: 15px;
+    background-color: theme-color('white');
+    color: #19191A;
+
+    thead {
+      background-color: #E5EAEC;
+      text-transform: uppercase;
+    }
+
+    tbody {
+      tr.unread {
+        font-weight: bold;
+      }
+    }
+
+    a {
+      color: theme-color('accent');
+    }
+  }
+}

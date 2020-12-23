@@ -14,7 +14,13 @@ import '@concretecms/bedrock/assets/calendar/js/frontend';
 import '@concretecms/bedrock/assets/navigation/js/frontend';
 import '@concretecms/bedrock/assets/conversations/js/frontend';
 import '@concretecms/bedrock/assets/imagery/js/frontend';
+import 'bootstrap-select/dist/js/bootstrap-select.min';
+import 'ajax-bootstrap-select/dist/js/ajax-bootstrap-select.min';
 
+// Custom assets
+import composeMessage from '../../../messages/js/compose';
+
+// Theme stuff
 $("#ccm-toggle-mobile-nav").click(function (e) {
     e.preventDefault();
 
@@ -25,4 +31,10 @@ $("#ccm-toggle-mobile-nav").click(function (e) {
     } else {
         $(this).addClass(activeClass);
     }
+});
+
+$(".send-message").click(function (e) {
+    e.preventDefault();
+
+    composeMessage($(this).data());
 });

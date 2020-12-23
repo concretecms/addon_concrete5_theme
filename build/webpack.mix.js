@@ -19,6 +19,7 @@ mix.webpackConfig({
     },
     module: {
         rules: [
+            { test: /\.html$/, loader: "underscore-template-loader" },
             {
                 test: /\.jsx?$/,
                 exclude: /(bower_components|node_modules\/v-calendar)/,

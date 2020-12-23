@@ -15,6 +15,9 @@ use Concrete\Core\Html\Service\Navigation;
 use Concrete\Core\Http\Response;
 use Concrete\Core\Http\ResponseFactory;
 use Concrete\Core\Page\Page;
+use Concrete\Core\Routing\Router;
+use PortlandLabs\ConcreteCmsTheme\API\V1\Messages;
+use PortlandLabs\ConcreteCmsTheme\API\V1\Middleware\FractalNegotiatorMiddleware;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 class ServiceProvider extends Provider
@@ -22,12 +25,14 @@ class ServiceProvider extends Provider
     protected $eventDispatcher;
     protected $responseFactory;
     protected $navigationHelper;
+    protected $router;
 
     public function __construct(
         Application $app,
         EventDispatcherInterface $eventDispatcher,
         ResponseFactory $responseFactory,
-        Navigation $navigationHelper
+        Navigation $navigationHelper,
+        Router $router
     )
     {
         parent::__construct($app);
@@ -35,11 +40,14 @@ class ServiceProvider extends Provider
         $this->eventDispatcher = $eventDispatcher;
         $this->responseFactory = $responseFactory;
         $this->navigationHelper = $navigationHelper;
+        $this->router = $router;
     }
 
     public function register()
     {
         $this->registerPageSelectorRedirect();
+        $this->registerAPI();
+        $this->registerAssetLocalizations();
     }
 
     private function registerPageSelectorRedirect()
@@ -67,5 +75,24 @@ class ServiceProvider extends Provider
                 }
             }
         });
+    }
+
+    protected function registerAPI()
+    {
+        $this->router->buildGroup()
+            ->setPrefix('/api/v1')
+            ->addMiddleware(FractalNegotiatorMiddleware::class)
+            ->routes(function ($groupRouter) {
+                /**
+                 * @var $groupRouter Router
+                 */
+                $groupRouter->get('/messages/compose', [Messages::class, 'compose']);
+                $groupRouter->post('/messages/send', [Messages::class, 'send']);
+            });
+    }
+
+    protected function registerAssetLocalizations()
+    {
+        $this->router->get('/community/js', 'PortlandLabs\ConcreteCmsTheme\Controller\Frontend\AssetsLocalization::getCommunityJavascript');
     }
 }
