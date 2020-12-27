@@ -64,7 +64,551 @@
             </composer>
         </pagetype>
     </pagetypes>
+    <pagetemplates>
+        <pagetemplate icon="full.png" name="Full" handle="full" package="" internal=""/>
+    </pagetemplates>
     <pages>
+        <page name="Home" path="" public-date="2020-12-15 10:46:00" filename="" pagetype="page" template="full"
+              user="admin" description="" package="">
+            <attributes>
+                <attributekey handle="main_area_number">
+                    <value><![CDATA[9]]></value>
+                </attributekey>
+            </attributes>
+            <area name="Main">
+                <blocks>
+                    <block type="image_slider" name="">
+                        <data table="btImageSlider">
+                            <record>
+                                <navigationType><![CDATA[0]]></navigationType>
+                            </record>
+                        </data>
+                        <data table="btImageSliderEntries">
+                            <record>
+                                <cID><![CDATA[0]]></cID>
+                                <fID>{ccm:export:file:header.png}</fID>
+                                <linkURL><![CDATA[]]></linkURL>
+                                <internalLinkCID><![CDATA[0]]></internalLinkCID>
+                                <title><![CDATA[Web Content Management for Teams]]></title>
+                                <description><![CDATA[<p>Build with Concrete CMS and your content contributors will be quickly posting their own work.</p>
+
+<p><a class="btn btn-primary" href="#">Schedule Demo</a>&nbsp;<a class="btn btn-secondary" href="#">Play Video</a></p>
+]]></description>
+                                <sortOrder><![CDATA[0]]></sortOrder>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Main 1">
+                <style>
+                    <backgroundColor>rgb(255, 255, 255)</backgroundColor>
+                    <backgroundRepeat>no-repeat</backgroundRepeat>
+                    <backgroundSize>auto</backgroundSize>
+                    <backgroundPosition>left top</backgroundPosition>
+                    <borderWidth/>
+                    <borderColor/>
+                    <borderStyle/>
+                    <borderRadius/>
+                    <baseFontSize/>
+                    <alignment/>
+                    <textColor/>
+                    <linkColor/>
+                    <paddingTop/>
+                    <paddingBottom/>
+                    <paddingLeft/>
+                    <paddingRight/>
+                    <marginTop/>
+                    <marginBottom/>
+                    <marginLeft/>
+                    <marginRight/>
+                    <rotate/>
+                    <boxShadowHorizontal/>
+                    <boxShadowVertical/>
+                    <boxShadowBlur/>
+                    <boxShadowSpread/>
+                    <boxShadowColor/>
+                    <customClass/>
+                    <customID/>
+                    <customElementAttribute/>
+                    <hideOnExtraSmallDevice/>
+                    <hideOnSmallDevice/>
+                    <hideOnMediumDevice/>
+                    <hideOnLargeDevice/>
+                </style>
+                <blocks>
+                    <block type="page_title" name="">
+                        <style>
+                            <backgroundColor/>
+                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                            <backgroundSize>auto</backgroundSize>
+                            <backgroundPosition>0% 0%</backgroundPosition>
+                            <borderWidth/>
+                            <borderColor/>
+                            <borderStyle/>
+                            <borderRadius/>
+                            <baseFontSize/>
+                            <alignment>center</alignment>
+                            <textColor/>
+                            <linkColor/>
+                            <paddingTop/>
+                            <paddingBottom/>
+                            <paddingLeft/>
+                            <paddingRight/>
+                            <marginTop/>
+                            <marginBottom/>
+                            <marginLeft/>
+                            <marginRight/>
+                            <rotate/>
+                            <boxShadowHorizontal/>
+                            <boxShadowVertical/>
+                            <boxShadowBlur/>
+                            <boxShadowSpread/>
+                            <boxShadowColor/>
+                            <customClass/>
+                            <customID/>
+                            <customElementAttribute/>
+                            <hideOnExtraSmallDevice/>
+                            <hideOnSmallDevice/>
+                            <hideOnMediumDevice/>
+                            <hideOnLargeDevice/>
+                        </style>
+                        <data table="btPageTitle">
+                            <record>
+                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                <titleText><![CDATA[Trusted by the best]]></titleText>
+                                <formatting><![CDATA[h4]]></formatting>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="image" name="">
+                        <data table="btContentImage">
+                            <record>
+                                <fID>{ccm:export:file:basf.png}</fID>
+                                <fOnstateID/>
+                                <cropImage><![CDATA[0]]></cropImage>
+                                <maxWidth><![CDATA[0]]></maxWidth>
+                                <maxHeight><![CDATA[0]]></maxHeight>
+                                <externalLink><![CDATA[]]></externalLink>
+                                <internalLinkCID/>
+                                <fileLinkID/>
+                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
+                                <altText><![CDATA[]]></altText>
+                                <title><![CDATA[]]></title>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="image" name="">
+                        <data table="btContentImage">
+                            <record>
+                                <fID>{ccm:export:file:global-sign.png}</fID>
+                                <fOnstateID/>
+                                <cropImage><![CDATA[0]]></cropImage>
+                                <maxWidth><![CDATA[0]]></maxWidth>
+                                <maxHeight><![CDATA[0]]></maxHeight>
+                                <externalLink><![CDATA[]]></externalLink>
+                                <internalLinkCID/>
+                                <fileLinkID/>
+                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
+                                <altText><![CDATA[]]></altText>
+                                <title><![CDATA[]]></title>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="image" name="">
+                        <data table="btContentImage">
+                            <record>
+                                <fID>{ccm:export:file:army-star.png}</fID>
+                                <fOnstateID/>
+                                <cropImage><![CDATA[0]]></cropImage>
+                                <maxWidth><![CDATA[0]]></maxWidth>
+                                <maxHeight><![CDATA[0]]></maxHeight>
+                                <externalLink><![CDATA[]]></externalLink>
+                                <internalLinkCID/>
+                                <fileLinkID/>
+                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
+                                <altText><![CDATA[]]></altText>
+                                <title><![CDATA[]]></title>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="image" name="">
+                        <data table="btContentImage">
+                            <record>
+                                <fID>{ccm:export:file:i-tv.png}</fID>
+                                <fOnstateID/>
+                                <cropImage><![CDATA[0]]></cropImage>
+                                <maxWidth><![CDATA[0]]></maxWidth>
+                                <maxHeight><![CDATA[0]]></maxHeight>
+                                <externalLink><![CDATA[]]></externalLink>
+                                <internalLinkCID/>
+                                <fileLinkID/>
+                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
+                                <altText><![CDATA[]]></altText>
+                                <title><![CDATA[]]></title>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="image" name="">
+                        <data table="btContentImage">
+                            <record>
+                                <fID>{ccm:export:file:rec.png}</fID>
+                                <fOnstateID/>
+                                <cropImage><![CDATA[0]]></cropImage>
+                                <maxWidth><![CDATA[0]]></maxWidth>
+                                <maxHeight><![CDATA[0]]></maxHeight>
+                                <externalLink><![CDATA[]]></externalLink>
+                                <internalLinkCID/>
+                                <fileLinkID/>
+                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
+                                <altText><![CDATA[]]></altText>
+                                <title><![CDATA[]]></title>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="horizontal_rule" name=""/>
+                </blocks>
+            </area>
+            <area name="Main 2">
+                <style>
+                    <backgroundColor>rgb(255, 255, 255)</backgroundColor>
+                    <backgroundRepeat>no-repeat</backgroundRepeat>
+                    <backgroundSize>auto</backgroundSize>
+                    <backgroundPosition>left top</backgroundPosition>
+                    <borderWidth/>
+                    <borderColor/>
+                    <borderStyle/>
+                    <borderRadius/>
+                    <baseFontSize/>
+                    <alignment/>
+                    <textColor/>
+                    <linkColor/>
+                    <paddingTop/>
+                    <paddingBottom/>
+                    <paddingLeft/>
+                    <paddingRight/>
+                    <marginTop/>
+                    <marginBottom/>
+                    <marginLeft/>
+                    <marginRight/>
+                    <rotate/>
+                    <boxShadowHorizontal/>
+                    <boxShadowVertical/>
+                    <boxShadowBlur/>
+                    <boxShadowSpread/>
+                    <boxShadowColor/>
+                    <customClass/>
+                    <customID/>
+                    <customElementAttribute/>
+                    <hideOnExtraSmallDevice/>
+                    <hideOnSmallDevice/>
+                    <hideOnMediumDevice/>
+                    <hideOnLargeDevice/>
+                </style>
+                <blocks>
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="6" offset="0">
+                                    <block type="image" name="">
+                                        <data table="btContentImage">
+                                            <record>
+                                                <fID>
+                                                    {ccm:export:file:emotional-footprint-logo.png}
+                                                </fID>
+                                                <fOnstateID/>
+                                                <cropImage><![CDATA[0]]></cropImage>
+                                                <maxWidth><![CDATA[0]]></maxWidth>
+                                                <maxHeight><![CDATA[0]]></maxHeight>
+                                                <externalLink><![CDATA[]]></externalLink>
+                                                <internalLinkCID/>
+                                                <fileLinkID/>
+                                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
+                                                <altText><![CDATA[]]></altText>
+                                                <title><![CDATA[]]></title>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="6" offset="0">
+                                    <block type="content" name="">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content><![CDATA[<h2>Awarded 1st place in Web Experience Management</h2>
+
+<p>Download our whitepaper on how managing a content team is a breeze with Concrete!</p>
+]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Main 3">
+                <blocks>
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="6" offset="0">
+                                    <block type="image" name="">
+                                        <data table="btContentImage">
+                                            <record>
+                                                <fID>
+                                                    {ccm:export:file:illustration-1.png}
+                                                </fID>
+                                                <fOnstateID/>
+                                                <cropImage><![CDATA[0]]></cropImage>
+                                                <maxWidth><![CDATA[0]]></maxWidth>
+                                                <maxHeight><![CDATA[0]]></maxHeight>
+                                                <externalLink><![CDATA[]]></externalLink>
+                                                <internalLinkCID/>
+                                                <fileLinkID/>
+                                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
+                                                <altText><![CDATA[]]></altText>
+                                                <title><![CDATA[]]></title>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="6" offset="0">
+                                    <block type="content" name="">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content><![CDATA[<h2>In-context editing</h2>
+
+<p>It always felt natural to us that websites should work like a word processor, not a printing press. Changing content is point and click.</p>
+]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Main 4">
+                <blocks>
+                    <block type="content" name="">
+                        <data table="btContentLocal">
+                            <record>
+                                <content><![CDATA[<quote>
+<p>Editing is so damn easy.  I didn&rsquo;t even watch the training videos.</p>
+
+<p><small><strong>John Rivers</strong> - Product Development Manager</small></p>
+</quote>
+
+<p>&nbsp;</p>
+]]></content>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Main 5">
+                <blocks>
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="6" offset="0">
+                                    <block type="content" name="">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content><![CDATA[<h2>Powerful Permissions</h2>
+
+<p>Limit who can edit parts of what, when. Attach workflows to different types of changes. Model multi-step workflow processes to match your organizational needs, and integrate with 3rd party task management systems.</p>
+]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="6" offset="0">
+                                    <block type="image" name="">
+                                        <data table="btContentImage">
+                                            <record>
+                                                <fID>
+                                                    {ccm:export:file:illustration-2.png}
+                                                </fID>
+                                                <fOnstateID/>
+                                                <cropImage><![CDATA[0]]></cropImage>
+                                                <maxWidth><![CDATA[0]]></maxWidth>
+                                                <maxHeight><![CDATA[0]]></maxHeight>
+                                                <externalLink><![CDATA[]]></externalLink>
+                                                <internalLinkCID/>
+                                                <fileLinkID/>
+                                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
+                                                <altText><![CDATA[]]></altText>
+                                                <title><![CDATA[]]></title>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Main 6">
+                <blocks>
+                    <block type="content" name="">
+                        <data table="btContentLocal">
+                            <record>
+                                <content><![CDATA[<p>&nbsp;</p>
+
+<p>After having worked in Joomla!, Drupal, WordPress, Orchard, Ektron and Sitefinity, Concrete5 is BY FAR my favorite, go-to CMS system. It&#39;s the most intuitive and easiest to work with out of them all.</p>
+
+<p><small><strong>Jenny McAddams</strong> - Technical Services Manager</small></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></content>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Main 7">
+                <blocks>
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="6" offset="0">
+                                    <block type="image" name="">
+                                        <data table="btContentImage">
+                                            <record>
+                                                <fID>
+                                                    {ccm:export:file:illustration-3.png}
+                                                </fID>
+                                                <fOnstateID/>
+                                                <cropImage><![CDATA[0]]></cropImage>
+                                                <maxWidth><![CDATA[0]]></maxWidth>
+                                                <maxHeight><![CDATA[0]]></maxHeight>
+                                                <externalLink><![CDATA[]]></externalLink>
+                                                <internalLinkCID/>
+                                                <fileLinkID/>
+                                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
+                                                <altText><![CDATA[]]></altText>
+                                                <title><![CDATA[]]></title>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="6" offset="0">
+                                    <block type="content" name="">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content><![CDATA[<h2>Secure &amp; Supported</h2>
+
+<p>Enjoy compliance out of the box and with our fully managed hosting you can know your site will always be safe.</p>
+]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Main 8">
+                <blocks>
+                    <block type="content" name="">
+                        <data table="btContentLocal">
+                            <record>
+                                <content><![CDATA[<p>After having worked in Joomla!, Drupal, WordPress, Orchard, Ektron and Sitefinity, Concrete5 is BY FAR my favorite, go-to CMS system. It&#39;s the most intuitive and easiest to work with out of them all.</p>
+
+<p><small><strong>Andy Fletcher</strong> - Chief Technology Officer </small></p>
+]]></content>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Main 9">
+                <blocks>
+                    <block type="page_title" name="">
+                        <style>
+                            <backgroundColor/>
+                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                            <backgroundSize>auto</backgroundSize>
+                            <backgroundPosition>0% 0%</backgroundPosition>
+                            <borderWidth/>
+                            <borderColor/>
+                            <borderStyle/>
+                            <borderRadius/>
+                            <baseFontSize/>
+                            <alignment>center</alignment>
+                            <textColor/>
+                            <linkColor/>
+                            <paddingTop/>
+                            <paddingBottom/>
+                            <paddingLeft/>
+                            <paddingRight/>
+                            <marginTop/>
+                            <marginBottom/>
+                            <marginLeft/>
+                            <marginRight/>
+                            <rotate/>
+                            <boxShadowHorizontal/>
+                            <boxShadowVertical/>
+                            <boxShadowBlur/>
+                            <boxShadowSpread/>
+                            <boxShadowColor/>
+                            <customClass/>
+                            <customID/>
+                            <customElementAttribute/>
+                            <hideOnExtraSmallDevice/>
+                            <hideOnSmallDevice/>
+                            <hideOnMediumDevice/>
+                            <hideOnLargeDevice/>
+                        </style>
+                        <data table="btPageTitle">
+                            <record>
+                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                <titleText><![CDATA[Get Started]]></titleText>
+                                <formatting><![CDATA[h2]]></formatting>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="content" name="">
+                        <data table="btContentLocal">
+                            <record>
+                                <content><![CDATA[<p style="text-align: center;">Not sure if Concrete CMS is the right choice for your next project?  Join us for a brief developer webinar to fast track the learning process and learn how you could build your solutions out of Concrete.</p>
+
+<p style="text-align: center;"><a class="btn btn-primary" href="#">Free Consultation</a></p>
+]]></content>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+        </page>
         <page name="About" path="/about" public-date="2020-12-15 10:46:00" filename="" pagetype="page" template="full"
               user="admin" description="" package="">
             <attributes>
@@ -149,6 +693,1882 @@
                     <value>1</value>
                 </attributekey>
             </attributes>
+        </page>
+
+        <page name="Typography" path="/typography" public-date="2020-12-15 14:02:22" filename="" pagetype="page" template="full"
+              user="admin" description="" package="" root="true">
+            <attributes>
+                <attributekey handle="exclude_nav">
+                    <value>1</value>
+                </attributekey>
+            </attributes>
+            <area name="Main">
+                <blocks>
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment/>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 1 / Left]]></titleText>
+                                                <formatting><![CDATA[h1]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 1 / Left]]></titleText>
+                                                <formatting><![CDATA[h1]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>center</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 1 / Center]]></titleText>
+                                                <formatting><![CDATA[h1]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>center</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass/>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 1 / Center]]></titleText>
+                                                <formatting><![CDATA[h1]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>right</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 1 / Right]]></titleText>
+                                                <formatting><![CDATA[h1]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>right</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass/>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 1 / Right]]></titleText>
+                                                <formatting><![CDATA[h1]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+
+                    <block type="horizontal_rule" name=""/>
+
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment/>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 2 / Left]]></titleText>
+                                                <formatting><![CDATA[h2]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 2 / Left]]></titleText>
+                                                <formatting><![CDATA[h2]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>center</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 2 / Center]]></titleText>
+                                                <formatting><![CDATA[h2]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>center</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass/>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 2 / Center]]></titleText>
+                                                <formatting><![CDATA[h2]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>right</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 2 / Right]]></titleText>
+                                                <formatting><![CDATA[h2]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>right</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass/>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 2 / Right]]></titleText>
+                                                <formatting><![CDATA[h2]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+
+                    <block type="horizontal_rule" name=""/>
+
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment/>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 3 / Left]]></titleText>
+                                                <formatting><![CDATA[h3]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 3 / Left]]></titleText>
+                                                <formatting><![CDATA[h3]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>center</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 3 / Center]]></titleText>
+                                                <formatting><![CDATA[h3]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>center</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass/>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 3 / Center]]></titleText>
+                                                <formatting><![CDATA[h3]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>right</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 3 / Right]]></titleText>
+                                                <formatting><![CDATA[h3]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>right</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass/>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 3 / Right]]></titleText>
+                                                <formatting><![CDATA[h3]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+
+                    <block type="horizontal_rule" name=""/>
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment/>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 4 / Left]]></titleText>
+                                                <formatting><![CDATA[h4]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 4 / Left]]></titleText>
+                                                <formatting><![CDATA[h4]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>center</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 4 / Center]]></titleText>
+                                                <formatting><![CDATA[h4]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>center</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass/>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 4 / Center]]></titleText>
+                                                <formatting><![CDATA[h4]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>right</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 4 / Right]]></titleText>
+                                                <formatting><![CDATA[h4]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>right</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass/>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 4 / Right]]></titleText>
+                                                <formatting><![CDATA[h4]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+
+                    <block type="horizontal_rule" name=""/>
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment/>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 5 / Left]]></titleText>
+                                                <formatting><![CDATA[h5]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 5 / Left]]></titleText>
+                                                <formatting><![CDATA[h5]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>center</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 5 / Center]]></titleText>
+                                                <formatting><![CDATA[h5]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>center</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass/>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 5 / Center]]></titleText>
+                                                <formatting><![CDATA[h5]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>right</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 5 / Right]]></titleText>
+                                                <formatting><![CDATA[h5]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>right</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass/>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 5 / Right]]></titleText>
+                                                <formatting><![CDATA[h5]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+
+                    <block type="horizontal_rule" name=""/>
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment/>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 6 / Left]]></titleText>
+                                                <formatting><![CDATA[h6]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 6 / Left]]></titleText>
+                                                <formatting><![CDATA[h6]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>center</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 6 / Center]]></titleText>
+                                                <formatting><![CDATA[h6]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>center</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass/>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 6 / Center]]></titleText>
+                                                <formatting><![CDATA[h6]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>right</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass>highlight</customClass>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 6 / Right]]></titleText>
+                                                <formatting><![CDATA[h6]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="page_title" name="">
+                                        <style>
+                                            <backgroundColor/>
+                                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                                            <backgroundSize>auto</backgroundSize>
+                                            <backgroundPosition>0% 0%</backgroundPosition>
+                                            <borderWidth/>
+                                            <borderColor/>
+                                            <borderStyle/>
+                                            <borderRadius/>
+                                            <baseFontSize/>
+                                            <alignment>right</alignment>
+                                            <textColor/>
+                                            <linkColor/>
+                                            <paddingTop/>
+                                            <paddingBottom/>
+                                            <paddingLeft/>
+                                            <paddingRight/>
+                                            <marginTop/>
+                                            <marginBottom/>
+                                            <marginLeft/>
+                                            <marginRight/>
+                                            <rotate/>
+                                            <boxShadowHorizontal/>
+                                            <boxShadowVertical/>
+                                            <boxShadowBlur/>
+                                            <boxShadowSpread/>
+                                            <boxShadowColor/>
+                                            <customClass/>
+                                            <customID/>
+                                            <customElementAttribute/>
+                                            <hideOnExtraSmallDevice/>
+                                            <hideOnSmallDevice/>
+                                            <hideOnMediumDevice/>
+                                            <hideOnLargeDevice/>
+                                        </style>
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[1]]></useCustomTitle>
+                                                <useFilterTitle><![CDATA[0]]></useFilterTitle>
+                                                <useFilterTopic><![CDATA[0]]></useFilterTopic>
+                                                <useFilterTag><![CDATA[0]]></useFilterTag>
+                                                <useFilterDate><![CDATA[0]]></useFilterDate>
+                                                <topicTextFormat><![CDATA[0]]></topicTextFormat>
+                                                <tagTextFormat><![CDATA[upperWord]]></tagTextFormat>
+                                                <dateTextFormat><![CDATA[0]]></dateTextFormat>
+                                                <filterDateFormat><![CDATA[F Y]]></filterDateFormat>
+                                                <titleText><![CDATA[Heading 6 / Right]]></titleText>
+                                                <formatting><![CDATA[h6]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+
+                    <block type="horizontal_rule" name=""/>
+
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="4" offset="0">
+                                    <block type="content" name="">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content><![CDATA[<p><strong>Large Text Left</strong></p>
+]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="content" name="">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content><![CDATA[<p style="text-align: center;"><strong>Large Text Center</strong></p>
+]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="content" name="">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content><![CDATA[<p style="text-align: right;"><strong>Large Text Right</strong></p>
+]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+
+                    <block type="horizontal_rule" name=""/>
+
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="4" offset="0">
+                                    <block type="content" name="">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content><![CDATA[<p>Paragraph Left</p>
+]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="content" name="">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content><![CDATA[<p style="text-align: center;">Paragraph Center</p>
+]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="content" name="">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content><![CDATA[<p style="text-align: right;">Paragraph Right</p>
+]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+
+                    <block type="horizontal_rule" name=""/>
+
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="4" offset="0">
+                                    <block type="content" name="">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content><![CDATA[<p><a href="#">Hyperlink Left</a></p>
+]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="content" name="">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content><![CDATA[<p style="text-align: center;"><a href="#">Hyperlink Center</a></p>
+]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="content" name="">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content><![CDATA[<p style="text-align: right;"><a href="#">Hyperlink Right</a></p>
+]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+                </blocks>
+            </area>
         </page>
     </pages>
     <stacks>
@@ -298,7 +2718,7 @@
                     <block type="image" name="">
                         <data table="btContentImage">
                             <record>
-                                <fID>{ccm:export:file:221608026366:logo.com_drk.svg}</fID>
+                                <fID>{ccm:export:file:logo.svg}</fID>
                                 <fOnstateID/>
                                 <cropImage><![CDATA[0]]></cropImage>
                                 <maxWidth><![CDATA[0]]></maxWidth>
@@ -354,7 +2774,7 @@
                     <block type="image" name="">
                         <data table="btContentImage">
                             <record>
-                                <fID>{ccm:export:file:221608026366:logo.com_drk.svg}</fID>
+                                <fID>{ccm:export:file:logo.svg}</fID>
                                 <fOnstateID/>
                                 <cropImage><![CDATA[0]]></cropImage>
                                 <maxWidth><![CDATA[0]]></maxWidth>
