@@ -25,7 +25,7 @@ $config = $app->make(Repository::class);
 
 $searchPageId = (int)$config->get("concrete_cms_theme.search_page_id");
 $searchPage = Page::getByID($searchPageId);
-$excludeBreadcrumb = $c->getPageController()->get("exclude_breadcrumb");
+$excludeBreadcrumb = $c->getPageController()->get("exclude_breadcrumb") ||$c->getAttribute("exclude_breadcrumb");
 
 ?>
 <!DOCTYPE html>

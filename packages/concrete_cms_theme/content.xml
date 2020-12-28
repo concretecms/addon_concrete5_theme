@@ -18,6 +18,10 @@
                       searchable="1"
                       indexed="0" type="number"
                       category="collection"/>
+        <attributekey handle="exclude_breadcrumb" name="Exclude Breadcrumb" package="concrete_cms_theme"
+                      searchable="1"
+                      indexed="0" type="boolean"
+                      category="collection"/>
     </attributekeys>
     <pagetypes>
         <pagetype name="Empty Page" handle="page" package="concrete_cms_theme" launch-in-composer="0"
@@ -72,12 +76,15 @@
               user="admin" description="" package="">
             <attributes>
                 <attributekey handle="main_area_number">
-                    <value><![CDATA[9]]></value>
+                    <value><![CDATA[4]]></value>
+                </attributekey>
+                <attributekey handle="exclude_breadcrumb">
+                    <value><![CDATA[1]]></value>
                 </attributekey>
             </attributes>
             <area name="Main">
                 <blocks>
-                    <block type="image_slider" name="">
+                    <block type="image_slider" name="" custom-template="concrete_slider">
                         <data table="btImageSlider">
                             <record>
                                 <navigationType><![CDATA[0]]></navigationType>
@@ -114,8 +121,8 @@
                     <alignment/>
                     <textColor/>
                     <linkColor/>
-                    <paddingTop/>
-                    <paddingBottom/>
+                    <paddingTop>63px</paddingTop>
+                    <paddingBottom>45px</paddingBottom>
                     <paddingLeft/>
                     <paddingRight/>
                     <marginTop/>
@@ -128,7 +135,7 @@
                     <boxShadowBlur/>
                     <boxShadowSpread/>
                     <boxShadowColor/>
-                    <customClass/>
+                    <customClass>section-marketing</customClass>
                     <customID/>
                     <customElementAttribute/>
                     <hideOnExtraSmallDevice/>
@@ -189,131 +196,36 @@
                             </record>
                         </data>
                     </block>
-                    <block type="image" name="">
-                        <data table="btContentImage">
+                    <block type="gallery" name="" custom-template="home_brands">
+                        <data table="btGallery">
                             <record>
+                                <includeDownloadLink><![CDATA[0]]></includeDownloadLink>
+                            </record>
+                        </data>
+                        <data table="btGalleryEntries">
+                            <record>
+                                <idx><![CDATA[1]]></idx>
                                 <fID>{ccm:export:file:basf.png}</fID>
-                                <fOnstateID/>
-                                <cropImage><![CDATA[0]]></cropImage>
-                                <maxWidth><![CDATA[0]]></maxWidth>
-                                <maxHeight><![CDATA[0]]></maxHeight>
-                                <externalLink><![CDATA[]]></externalLink>
-                                <internalLinkCID/>
-                                <fileLinkID/>
-                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
-                                <altText><![CDATA[]]></altText>
-                                <title><![CDATA[]]></title>
                             </record>
-                        </data>
-                    </block>
-                    <block type="image" name="">
-                        <data table="btContentImage">
                             <record>
+                                <idx><![CDATA[2]]></idx>
                                 <fID>{ccm:export:file:global-sign.png}</fID>
-                                <fOnstateID/>
-                                <cropImage><![CDATA[0]]></cropImage>
-                                <maxWidth><![CDATA[0]]></maxWidth>
-                                <maxHeight><![CDATA[0]]></maxHeight>
-                                <externalLink><![CDATA[]]></externalLink>
-                                <internalLinkCID/>
-                                <fileLinkID/>
-                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
-                                <altText><![CDATA[]]></altText>
-                                <title><![CDATA[]]></title>
                             </record>
-                        </data>
-                    </block>
-                    <block type="image" name="">
-                        <data table="btContentImage">
                             <record>
+                                <idx><![CDATA[3]]></idx>
                                 <fID>{ccm:export:file:army-star.png}</fID>
-                                <fOnstateID/>
-                                <cropImage><![CDATA[0]]></cropImage>
-                                <maxWidth><![CDATA[0]]></maxWidth>
-                                <maxHeight><![CDATA[0]]></maxHeight>
-                                <externalLink><![CDATA[]]></externalLink>
-                                <internalLinkCID/>
-                                <fileLinkID/>
-                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
-                                <altText><![CDATA[]]></altText>
-                                <title><![CDATA[]]></title>
                             </record>
-                        </data>
-                    </block>
-                    <block type="image" name="">
-                        <data table="btContentImage">
                             <record>
+                                <idx><![CDATA[4]]></idx>
                                 <fID>{ccm:export:file:i-tv.png}</fID>
-                                <fOnstateID/>
-                                <cropImage><![CDATA[0]]></cropImage>
-                                <maxWidth><![CDATA[0]]></maxWidth>
-                                <maxHeight><![CDATA[0]]></maxHeight>
-                                <externalLink><![CDATA[]]></externalLink>
-                                <internalLinkCID/>
-                                <fileLinkID/>
-                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
-                                <altText><![CDATA[]]></altText>
-                                <title><![CDATA[]]></title>
                             </record>
-                        </data>
-                    </block>
-                    <block type="image" name="">
-                        <data table="btContentImage">
                             <record>
+                                <idx><![CDATA[5]]></idx>
                                 <fID>{ccm:export:file:rec.png}</fID>
-                                <fOnstateID/>
-                                <cropImage><![CDATA[0]]></cropImage>
-                                <maxWidth><![CDATA[0]]></maxWidth>
-                                <maxHeight><![CDATA[0]]></maxHeight>
-                                <externalLink><![CDATA[]]></externalLink>
-                                <internalLinkCID/>
-                                <fileLinkID/>
-                                <openLinkInNewWindow><![CDATA[0]]></openLinkInNewWindow>
-                                <altText><![CDATA[]]></altText>
-                                <title><![CDATA[]]></title>
                             </record>
                         </data>
                     </block>
                     <block type="horizontal_rule" name=""/>
-                </blocks>
-            </area>
-            <area name="Main 2">
-                <style>
-                    <backgroundColor>rgb(255, 255, 255)</backgroundColor>
-                    <backgroundRepeat>no-repeat</backgroundRepeat>
-                    <backgroundSize>auto</backgroundSize>
-                    <backgroundPosition>left top</backgroundPosition>
-                    <borderWidth/>
-                    <borderColor/>
-                    <borderStyle/>
-                    <borderRadius/>
-                    <baseFontSize/>
-                    <alignment/>
-                    <textColor/>
-                    <linkColor/>
-                    <paddingTop/>
-                    <paddingBottom/>
-                    <paddingLeft/>
-                    <paddingRight/>
-                    <marginTop/>
-                    <marginBottom/>
-                    <marginLeft/>
-                    <marginRight/>
-                    <rotate/>
-                    <boxShadowHorizontal/>
-                    <boxShadowVertical/>
-                    <boxShadowBlur/>
-                    <boxShadowSpread/>
-                    <boxShadowColor/>
-                    <customClass/>
-                    <customID/>
-                    <customElementAttribute/>
-                    <hideOnExtraSmallDevice/>
-                    <hideOnSmallDevice/>
-                    <hideOnMediumDevice/>
-                    <hideOnLargeDevice/>
-                </style>
-                <blocks>
                     <block type="core_area_layout" name="">
                         <arealayout type="theme-grid" columns="12">
                             <columns>
@@ -342,7 +254,7 @@
                                     <block type="content" name="">
                                         <data table="btContentLocal">
                                             <record>
-                                                <content><![CDATA[<h2>Awarded 1st place in Web Experience Management</h2>
+                                                <content><![CDATA[<h2 class="highlight">Awarded 1st place in Web Experience Management</h2>
 
 <p>Download our whitepaper on how managing a content team is a breeze with Concrete!</p>
 ]]></content>
@@ -355,7 +267,42 @@
                     </block>
                 </blocks>
             </area>
-            <area name="Main 3">
+            <area name="Main 2">
+                <style>
+                    <backgroundColor>rgba(255, 255, 255, 0)</backgroundColor>
+                    <backgroundRepeat>no-repeat</backgroundRepeat>
+                    <backgroundSize>auto</backgroundSize>
+                    <backgroundPosition>left top</backgroundPosition>
+                    <borderWidth/>
+                    <borderColor/>
+                    <borderStyle/>
+                    <borderRadius/>
+                    <baseFontSize/>
+                    <alignment/>
+                    <textColor/>
+                    <linkColor/>
+                    <paddingTop>69px</paddingTop>
+                    <paddingBottom>62px</paddingBottom>
+                    <paddingLeft/>
+                    <paddingRight/>
+                    <marginTop/>
+                    <marginBottom/>
+                    <marginLeft/>
+                    <marginRight/>
+                    <rotate/>
+                    <boxShadowHorizontal/>
+                    <boxShadowVertical/>
+                    <boxShadowBlur/>
+                    <boxShadowSpread/>
+                    <boxShadowColor/>
+                    <customClass>section-features</customClass>
+                    <customID/>
+                    <customElementAttribute/>
+                    <hideOnExtraSmallDevice/>
+                    <hideOnSmallDevice/>
+                    <hideOnMediumDevice/>
+                    <hideOnLargeDevice/>
+                </style>
                 <blocks>
                     <block type="core_area_layout" name="">
                         <arealayout type="theme-grid" columns="12">
@@ -385,7 +332,7 @@
                                     <block type="content" name="">
                                         <data table="btContentLocal">
                                             <record>
-                                                <content><![CDATA[<h2>In-context editing</h2>
+                                                <content><![CDATA[<h2 class="highlight">In-context editing</h2>
 
 <p>It always felt natural to us that websites should work like a word processor, not a printing press. Changing content is point and click.</p>
 ]]></content>
@@ -396,27 +343,58 @@
                             </columns>
                         </arealayout>
                     </block>
-                </blocks>
-            </area>
-            <area name="Main 4">
-                <blocks>
-                    <block type="content" name="">
-                        <data table="btContentLocal">
+
+                    <block type="testimonial" name="" custom-template="home_testimonial">
+                        <style>
+                            <paddingBottom>45px</paddingBottom>
+                        </style>
+                        <data table="btTestimonial">
                             <record>
-                                <content><![CDATA[<quote>
-<p>Editing is so damn easy.  I didn&rsquo;t even watch the training videos.</p>
-
-<p><small><strong>John Rivers</strong> - Product Development Manager</small></p>
-</quote>
-
-<p>&nbsp;</p>
-]]></content>
+                                <paragraph><![CDATA[Editing is so damn easy.  I didn’t even watch the training videos.]]></paragraph>
+                                <fID>{ccm:export:file:john-rivers.png}</fID>
+                                <name><![CDATA[John Rivers]]></name>
+                                <position><![CDATA[Product Development Manager]]></position>
                             </record>
                         </data>
                     </block>
                 </blocks>
             </area>
-            <area name="Main 5">
+            <area name="Main 3">
+                <style>
+                    <backgroundColor>rgba(255, 255, 255, 0)</backgroundColor>
+                    <backgroundRepeat>no-repeat</backgroundRepeat>
+                    <backgroundSize>auto</backgroundSize>
+                    <backgroundPosition>left top</backgroundPosition>
+                    <borderWidth/>
+                    <borderColor/>
+                    <borderStyle/>
+                    <borderRadius/>
+                    <baseFontSize/>
+                    <alignment/>
+                    <textColor/>
+                    <linkColor/>
+                    <paddingTop>48px</paddingTop>
+                    <paddingBottom/>
+                    <paddingLeft/>
+                    <paddingRight/>
+                    <marginTop/>
+                    <marginBottom/>
+                    <marginLeft/>
+                    <marginRight/>
+                    <rotate/>
+                    <boxShadowHorizontal/>
+                    <boxShadowVertical/>
+                    <boxShadowBlur/>
+                    <boxShadowSpread/>
+                    <boxShadowColor/>
+                    <customClass>section-features</customClass>
+                    <customID/>
+                    <customElementAttribute/>
+                    <hideOnExtraSmallDevice/>
+                    <hideOnSmallDevice/>
+                    <hideOnMediumDevice/>
+                    <hideOnLargeDevice/>
+                </style>
                 <blocks>
                     <block type="core_area_layout" name="">
                         <arealayout type="theme-grid" columns="12">
@@ -425,7 +403,7 @@
                                     <block type="content" name="">
                                         <data table="btContentLocal">
                                             <record>
-                                                <content><![CDATA[<h2>Powerful Permissions</h2>
+                                                <content><![CDATA[<h2 class="highlight">Powerful Permissions</h2>
 
 <p>Limit who can edit parts of what, when. Attach workflows to different types of changes. Model multi-step workflow processes to match your organizational needs, and integrate with 3rd party task management systems.</p>
 ]]></content>
@@ -457,36 +435,20 @@
                             </columns>
                         </arealayout>
                     </block>
-                </blocks>
-            </area>
-            <area name="Main 6">
-                <blocks>
-                    <block type="content" name="">
-                        <data table="btContentLocal">
+
+                    <block type="testimonial" name="" custom-template="home_testimonial">
+                        <data table="btTestimonial">
                             <record>
-                                <content><![CDATA[<p>&nbsp;</p>
-
-<p>After having worked in Joomla!, Drupal, WordPress, Orchard, Ektron and Sitefinity, Concrete5 is BY FAR my favorite, go-to CMS system. It&#39;s the most intuitive and easiest to work with out of them all.</p>
-
-<p><small><strong>Jenny McAddams</strong> - Technical Services Manager</small></p>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
-]]></content>
+                                <paragraph><![CDATA[After having worked in Joomla!, Drupal, WordPress, Orchard, Ektron and Sitefinity, Concrete5 is BY FAR my favorite, go-to CMS system. It's the most intuitive and easiest to work with out of them all.]]></paragraph>
+                                <fID>{ccm:export:file:jenny-mc-addams.png}</fID>
+                                <name><![CDATA[Jenny McAddams]]></name>
+                                <position><![CDATA[Technical Services Manager]]></position>
                             </record>
                         </data>
                     </block>
-                </blocks>
-            </area>
-            <area name="Main 7">
-                <blocks>
+
+                    <block type="horizontal_rule" name=""/>
+
                     <block type="core_area_layout" name="">
                         <arealayout type="theme-grid" columns="12">
                             <columns>
@@ -515,7 +477,7 @@
                                     <block type="content" name="">
                                         <data table="btContentLocal">
                                             <record>
-                                                <content><![CDATA[<h2>Secure &amp; Supported</h2>
+                                                <content><![CDATA[<h2 class="highlight">Secure &amp; Supported</h2>
 
 <p>Enjoy compliance out of the box and with our fully managed hosting you can know your site will always be safe.</p>
 ]]></content>
@@ -528,22 +490,56 @@
                     </block>
                 </blocks>
             </area>
-            <area name="Main 8">
+            <area name="Main 4">
+                <style>
+                    <backgroundColor>rgba(255, 255, 255, 0)</backgroundColor>
+                    <backgroundRepeat>no-repeat</backgroundRepeat>
+                    <backgroundSize>auto</backgroundSize>
+                    <backgroundPosition>left top</backgroundPosition>
+                    <borderWidth/>
+                    <borderColor/>
+                    <borderStyle/>
+                    <borderRadius/>
+                    <baseFontSize/>
+                    <alignment/>
+                    <textColor/>
+                    <linkColor/>
+                    <paddingTop>69px</paddingTop>
+                    <paddingBottom>93px</paddingBottom>
+                    <paddingLeft/>
+                    <paddingRight/>
+                    <marginTop/>
+                    <marginBottom/>
+                    <marginLeft/>
+                    <marginRight/>
+                    <rotate/>
+                    <boxShadowHorizontal/>
+                    <boxShadowVertical/>
+                    <boxShadowBlur/>
+                    <boxShadowSpread/>
+                    <boxShadowColor/>
+                    <customClass>section-get-started</customClass>
+                    <customID/>
+                    <customElementAttribute/>
+                    <hideOnExtraSmallDevice/>
+                    <hideOnSmallDevice/>
+                    <hideOnMediumDevice/>
+                    <hideOnLargeDevice/>
+                </style>
                 <blocks>
-                    <block type="content" name="">
-                        <data table="btContentLocal">
+                    <block type="testimonial" name="" custom-template="home_testimonial">
+                        <data table="btTestimonial">
                             <record>
-                                <content><![CDATA[<p>After having worked in Joomla!, Drupal, WordPress, Orchard, Ektron and Sitefinity, Concrete5 is BY FAR my favorite, go-to CMS system. It&#39;s the most intuitive and easiest to work with out of them all.</p>
-
-<p><small><strong>Andy Fletcher</strong> - Chief Technology Officer </small></p>
-]]></content>
+                                <paragraph><![CDATA[After having worked in Joomla!, Drupal, WordPress, Orchard, Ektron and Sitefinity, Concrete5 is BY FAR my favorite, go-to CMS system. It's the most intuitive and easiest to work with out of them all.]]></paragraph>
+                                <fID>{ccm:export:file:andy-fletcher.png}</fID>
+                                <name><![CDATA[Andy Fletcher]]></name>
+                                <position><![CDATA[Chief Technology Officer]]></position>
                             </record>
                         </data>
                     </block>
-                </blocks>
-            </area>
-            <area name="Main 9">
-                <blocks>
+
+                    <block type="horizontal_rule" name=""/>
+
                     <block type="page_title" name="">
                         <style>
                             <backgroundColor/>
@@ -562,7 +558,7 @@
                             <paddingBottom/>
                             <paddingLeft/>
                             <paddingRight/>
-                            <marginTop/>
+                            <marginTop>86px</marginTop>
                             <marginBottom/>
                             <marginLeft/>
                             <marginRight/>
@@ -572,7 +568,7 @@
                             <boxShadowBlur/>
                             <boxShadowSpread/>
                             <boxShadowColor/>
-                            <customClass/>
+                            <customClass>highlight</customClass>
                             <customID/>
                             <customElementAttribute/>
                             <hideOnExtraSmallDevice/>

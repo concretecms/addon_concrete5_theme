@@ -28,7 +28,7 @@
 @import "./features/account/messages";
 
 div.ccm-page {
-
+  overflow-x: hidden;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -36,6 +36,15 @@ div.ccm-page {
   main {
     flex: 1;
     margin-top: 15px;
+  }
+
+  img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
 
   @import "./header";
@@ -51,4 +60,7 @@ div.ccm-page {
   @import "./card";
   @import "./navs";
   @import "./footer";
+
+  /* Pages */
+  @import "./pages/home";
 }
