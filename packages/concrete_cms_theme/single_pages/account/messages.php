@@ -10,6 +10,7 @@
 defined('C5_EXECUTE') or die("Access Denied.");
 
 use Concrete\Core\Application\Service\UserInterface;
+use Concrete\Core\Form\Service\Form;
 use Concrete\Core\Localization\Service\Date;
 use Concrete\Core\Support\Facade\Application;
 use Concrete\Core\Support\Facade\Url;
@@ -33,18 +34,23 @@ use Concrete\Core\View\View;
 /** @var string $backURL */
 /** @var string $deleteURL */
 /** @var string $dateAdded */
+/** @var null|int $receiverId */
 
 $app = Application::getFacadeApplication();
 /** @var Date $dh */
 $dh = $app->make(Date::class);
 /** @var UserInterface $userInterface */
 $userInterface = $app->make(UserInterface::class);
+/** @var Form $form */
+$form = $app->make(Form::class);
 /** @var Token $token */
 $token = $app->make(Token::class);
 
 ?>
 
 <div class="messages">
+    <?php echo $form->hidden("box", $mailbox->msgMailboxID); ?>
+
     <div class="container">
         <div class="row">
             <div class="col">
@@ -55,7 +61,6 @@ $token = $app->make(Token::class);
                 <p>
                     <?php echo t("Each level of certification build on the one before."); ?>
                 </p>
-
             </div>
         </div>
 
@@ -87,85 +92,158 @@ $token = $app->make(Token::class);
             </div>
         </div>
 
-
         <div class="clearfix"></div>
 
         <div class="row">
             <div class="col">
-                <table class="table message-table">
-                    <thead>
-                    <tr>
-                        <th>
-                            <?php if ('sent' == $mailbox) { ?>
-                                <?php echo t('To'); ?>
-                            <?php } else { ?>
-                                <?php echo t('From'); ?>
-                            <?php } ?>
-                        </th>
+                <?php if (count($messages) === 0) { ?>
+                    <div class="alert alert-warning">
+                        <?php echo t("This folder is empty."); ?>
+                    </div>
+                <?php } else { ?>
+                    <table class="table message-table">
+                        <thead>
+                        <tr>
+                            <th>
+                                <div class="dropdown ccm-dropdown">
+                                    <button class="dropdown-toggle checkbox-wrapper" type="button"
+                                            id="ccm-message-bulk-action"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <input type="checkbox" name="msgAll" id="ccm-select-all-messages"/> &nbsp;
+                                        <label for="ccm-select-all-messages">
+                                            &nbsp;
+                                        </label>
+                                    </button>
 
-                        <th>
-                            <?php echo t('Subject'); ?>
-                        </th>
-
-                        <th class="text-right">
-                            <?php echo t('Sent At'); ?>
-                        </th>
-                    </tr>
-                    </thead>
-
-                    <tbody>
-                    <?php if (is_array($messages)) { ?>
-                        <?php foreach ($messages as $msg) { ?>
-                            <?php $profileURL = $msg->getMessageRelevantUserObject()->getUserPublicProfileURL(); ?>
-                            <tr class="<?php echo $msg->isMessageUnread() ? "unread" : ""; ?>" data-message-id="<?php echo h($msg->getMessageID()); ?>">
-                                <td class="ccm-profile-message-from">
-                                    <?php if ($profileURL) { ?>
-                                        <a href="<?php echo $profileURL; ?>">
-                                            <?php echo $msg->getMessageRelevantUserName(); ?>
+                                    <div class="dropdown-menu" aria-labelledby="ccm-message-bulk-action">
+                                        <a class="dropdown-item" href="javascript:void(0);"
+                                           id="ccm-messages-bulk-action-select-all">
+                                            <?php echo t("Select All"); ?>
                                         </a>
-                                    <?php } else { ?>
-                                        <div>
-                                            <?php echo $msg->getMessageRelevantUserName(); ?>
+
+                                        <a class="dropdown-item d-none" href="javascript:void(0);"
+                                           id="ccm-messages-bulk-action-unselect-all">
+                                            <?php echo t("Unselect All"); ?>
+                                        </a>
+
+                                        <a class="dropdown-item bulk-action-item disabled" href="javascript:void(0);"
+                                           data-action="read">
+                                            <?php echo t("Mark as read"); ?>
+                                        </a>
+
+                                        <a class="dropdown-item bulk-action-item disabled" href="javascript:void(0);"
+                                           data-action="unread">
+                                            <?php echo t("Mark as unread"); ?>
+                                        </a>
+
+                                        <div class="dropdown-divider"></div>
+
+                                        <a class="dropdown-item bulk-action-item disabled" href="javascript:void(0);"
+                                           data-action="delete">
+                                            <?php echo t("Delete"); ?>
+                                        </a>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th>
+                                <?php if ('sent' == $mailbox) { ?>
+                                    <?php echo t('To'); ?>
+                                <?php } else { ?>
+                                    <?php echo t('From'); ?>
+                                <?php } ?>
+                            </th>
+
+                            <th>
+                                <?php echo t('Subject'); ?>
+                            </th>
+
+                            <th class="text-right">
+                                <?php echo t('Sent At'); ?>
+                            </th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <?php if (is_array($messages)) { ?>
+                            <?php foreach ($messages as $msg) { ?>
+                                <?php $profileURL = $msg->getMessageRelevantUserObject()->getUserPublicProfileURL(); ?>
+                                <tr class="<?php echo $msg->isMessageUnread() ? "unread" : ""; ?>"
+                                    data-message-id="<?php echo h($msg->getMessageID()); ?>">
+                                    <td>
+                                        <div class="checkbox-wrapper">
+                                            <input type="checkbox"
+                                                   name="msg[]"
+                                                   value="<?php echo (int)$msg->getMessageID(); ?>"
+                                                   class="ccm-message-item"
+                                                   id="ccm-select-message-<?php echo (int)$msgID; ?>"/>
+                                            <label for="ccm-select-message-<?php echo (int)$msgID; ?>">
+                                                &nbsp;
+                                            </label>
                                         </div>
-                                    <?php } ?>
-                                </td>
+                                    </td>
+                                    <td class="ccm-profile-message-from">
+                                        <?php if ($profileURL) { ?>
+                                            <a href="<?php echo $profileURL; ?>">
+                                                <?php echo $msg->getMessageRelevantUserName(); ?>
+                                            </a>
+                                        <?php } else { ?>
+                                            <div>
+                                                <?php echo $msg->getMessageRelevantUserName(); ?>
+                                            </div>
+                                        <?php } ?>
+                                    </td>
 
-                                <td class="ccm-profile-messages-item-name">
-                                    <a href="javascript:void(0);" class="send-message"
-                                       data-message-id="<?php echo $msg->getMessageID(); ?>">
-                                        <?php echo $msg->getFormattedMessageSubject(); ?>
-                                    </a>
-                                </td>
+                                    <td class="ccm-profile-messages-item-name">
+                                        <a href="javascript:void(0);" class="send-message"
+                                           data-message-id="<?php echo $msg->getMessageID(); ?>">
+                                            <?php echo $msg->getFormattedMessageSubject(); ?>
+                                        </a>
+                                    </td>
 
-                                <td class="text-right">
-                                    <?php /** @noinspection PhpUnhandledExceptionInspection */
-                                    echo $dh->formatDateTime($msg->getMessageDateAdded(), true); ?>
+                                    <td class="text-right">
+                                        <?php /** @noinspection PhpUnhandledExceptionInspection */
+                                        echo $dh->formatDateTime($msg->getMessageDateAdded(), true); ?>
+                                    </td>
+                                </tr>
+                            <?php } ?>
+                        <?php } else { ?>
+                            <tr>
+                                <td colspan="4">
+                                    <?php echo t('No messages found.'); ?>
                                 </td>
                             </tr>
                         <?php } ?>
-                    <?php } else { ?>
-                        <tr>
-                            <td colspan="4">
-                                <?php echo t('No messages found.'); ?>
-                            </td>
-                        </tr>
-                    <?php } ?>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
 
-                <?php
-                $summary = $messageList->getSummary();
-                $paginator = $messageList->getPagination(false, []);
-                $paginator->classOff = "page-link";
-                $paginator->classOn = "page-link";
-                $paginator->classCurrent = "page-link";
-                ?>
-                <?php if ($summary->pages > 1) { ?>
-                <ul class="pagination justify-content-center">
-                    <?php echo $paginator->getPages("li"); ?>
+                    <?php
+                    $summary = $messageList->getSummary();
+                    $paginator = $messageList->getPagination(false, []);
+                    $paginator->classOff = "page-link";
+                    $paginator->classOn = "page-link";
+                    $paginator->classCurrent = "page-link";
+                    ?>
+                    <?php if ($summary->pages > 1) { ?>
+                        <ul class="pagination justify-content-center">
+                        <?php echo $paginator->getPages("li"); ?>
                     <?php } ?>
-                </ul>
+                    </ul>
+                <?php } ?>
             </div>
         </div>
     </div>
+
+    <?php if ($receiverId > 0) { ?>
+        <!--suppress JSUnresolvedFunction -->
+        <script>
+            (function ($) {
+                $(function () {
+                    window.sendPrivatePrivate(<?php /** @noinspection PhpComposerExtensionStubsInspection */echo json_encode([
+                        "receiver" => $receiverId
+                    ]); ?>);
+                });
+            })(jQuery);
+        </script>
+    <?php } ?>
 </div>

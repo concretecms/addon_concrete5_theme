@@ -110,18 +110,15 @@ export default (options) => {
                     e.preventDefault();
 
                     let $form = $modalDialog.find("form");
-                    let formArray = $form.serializeArray();
-
-                    let messageData = {};
-
-                    for (let i = 0; i < formArray.length; i++) {
-                        messageData[formArray[i]['name']] = formArray[i]['value'];
-                    }
+                    let messageData = new FormData($form.get(0));
 
                     $.ajax({
                         url: CCM_DISPATCHER_FILENAME + "/api/v1/messages/send",
                         method: "POST",
                         data: messageData,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
                         success: (data) => {
                             if (data.error) {
                                 for (let i = 0; i < data.errors.length; i++) {

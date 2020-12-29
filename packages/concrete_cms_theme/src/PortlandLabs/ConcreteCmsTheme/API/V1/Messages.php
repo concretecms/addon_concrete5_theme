@@ -11,7 +11,11 @@ namespace PortlandLabs\ConcreteCmsTheme\API\V1;
 
 use Concrete\Core\Application\Application;
 use Concrete\Core\Application\EditResponse;
+use Concrete\Core\Database\Connection\Connection;
+use Concrete\Core\Entity\File\Version;
 use Concrete\Core\Error\ErrorList\ErrorList;
+use Concrete\Core\File\Import\FileImporter;
+use Concrete\Core\File\Import\ImportException;
 use Concrete\Core\Form\Service\Validation;
 use Concrete\Core\Http\Request;
 use Concrete\Core\Localization\Service\Date;
@@ -21,6 +25,7 @@ use Concrete\Core\User\User;
 use Concrete\Core\User\UserInfo;
 use Concrete\Core\User\UserInfoRepository;
 use Concrete\Core\Validation\CSRF\Token;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 class Messages
@@ -33,6 +38,8 @@ class Messages
     protected $dateHelper;
     protected $token;
     protected $validation;
+    protected $importer;
+    protected $connection;
 
     public function __construct(
         Request $request,
@@ -41,7 +48,9 @@ class Messages
         UserInfoRepository $userInfoRepository,
         Date $dateHelper,
         Token $token,
-        Validation $validation
+        Validation $validation,
+        FileImporter $importer,
+        Connection $connection
     )
     {
         $this->request = $request;
@@ -52,6 +61,8 @@ class Messages
         $this->dateHelper = $dateHelper;
         $this->token = $token;
         $this->validation = $validation;
+        $this->importer = $importer;
+        $this->connection = $connection;
     }
 
     protected function validateUser($uID)
@@ -100,6 +111,20 @@ class Messages
                     /** @noinspection PhpUnhandledExceptionInspection */
                     $body .= t("From: %s\nDate Sent: %s\nSubject: %s", $msg->getMessageAuthorName(), $this->dateHelper->formatDateTime($msg->getMessageDateAdded(), true), $msg->getFormattedMessageSubject());
                     $body .= "\n\n" . h($msg->getMessageBody());
+
+                    // append attachments to body
+                    $attachmentString = "";
+
+                    foreach ($msg->getAttachments() as $attachment) {
+                        $approvedFileVersion = $attachment->getApprovedVersion();
+                        if ($approvedFileVersion instanceof Version) {
+                            $attachmentString .= sprintf("%s\n", h($approvedFileVersion->getDownloadURL()));
+                        }
+                    }
+
+                    if (strlen($attachmentString) > 0) {
+                        $body .= "\n\n" . t("Attachments: %s\n", $attachmentString);
+                    }
 
                     $messageData["msgBody"] = $body;
 
@@ -161,31 +186,127 @@ class Messages
                 if ($this->request->request->has("msgID") && $this->request->request->getInt("msgID") > 0) {
                     // This message is an reply to another message
                     $msgID = $this->request->request->getInt("msgID");
-                    $mailbox = UserPrivateMessageMailbox::get($this->userInfo, UserPrivateMessageMailbox::MBTYPE_INBOX); // @todo: double check this
+                    $mailbox = UserPrivateMessageMailbox::get($this->userInfo, UserPrivateMessageMailbox::MBTYPE_INBOX);
                     $inReplyTo = UserPrivateMessage::getByID($msgID, $mailbox);
                 }
 
-                $r = $this->userInfo->sendPrivateMessage(
-                    $recipient,
-                    $subject,
-                    $body,
-                    $inReplyTo
-                );
+                // add message attachments
+                $attachments = [];
 
-                if ($r === null) {
-                    if ($inReplyTo === null) {
-                        $response->setMessage(t("Message sent!"));
-                    } else {
-                        $response->setMessage(t("Reply sent!"));
+                foreach ($this->request->files->get("msgAttachments") as $uploadedFile) {
+                    if ($uploadedFile instanceof UploadedFile) {
+                        try {
+                            $fileVersion = $this->importer->importUploadedFile($uploadedFile);
+
+                            if ($fileVersion instanceof Version) {
+                                $file = $fileVersion->getFile();
+                                $attachments[] = $file;
+                            }
+                        } catch (ImportException $err) {
+                            $errorList->add($err);
+                        }
                     }
-                } else if ($r === false) {
-                    $errorList->add(t("The message was detected as spam."));
-                } else if ($r instanceof ErrorList) {
-                    $errorList = $r;
+                }
+
+                if (!$errorList->has()) {
+                    $r = $this->userInfo->sendPrivateMessage(
+                        $recipient,
+                        $subject,
+                        $body,
+                        $inReplyTo,
+                        $attachments
+                    );
+
+                    if ($r === null) {
+                        if ($inReplyTo === null) {
+                            $response->setMessage(t("Message sent!"));
+                        } else {
+                            $response->setMessage(t("Reply sent!"));
+                        }
+                    } else if ($r === false) {
+                        $errorList->add(t("The message was detected as spam."));
+                    } else if ($r instanceof ErrorList) {
+                        $errorList = $r;
+                    }
                 }
             }
         } else {
             $errorList = $this->validation->getError();
+        }
+
+        $response->setError($errorList);
+
+        return new JsonResponse($response);
+    }
+
+    public function delete()
+    {
+        $response = new EditResponse();
+        $errorList = new ErrorList();
+
+        $messageIds = $this->request->request->get("messageIds", []);
+        $box = $this->request->request->get("box");
+
+        $mailbox = UserPrivateMessageMailbox::get($this->userInfo, $box);
+
+        foreach ($messageIds as $messageId) {
+            $msg = UserPrivateMessage::getByID($messageId, $mailbox);
+
+            if ($msg === false) {
+                $errorList->add(t("The given message id doesn't exists."));
+            } else {
+                $msg->delete();
+            }
+        }
+
+        $response->setError($errorList);
+
+        return new JsonResponse($response);
+    }
+
+    public function read()
+    {
+        $response = new EditResponse();
+        $errorList = new ErrorList();
+
+        $messageIds = $this->request->request->get("messageIds", []);
+        $box = $this->request->request->get("box");
+
+        $mailbox = UserPrivateMessageMailbox::get($this->userInfo, $box);
+
+        foreach ($messageIds as $messageId) {
+            $msg = UserPrivateMessage::getByID($messageId, $mailbox);
+
+            if ($msg === false) {
+                $errorList->add(t("The given message id doesn't exists."));
+            } else {
+                $this->connection->executeQuery('update UserPrivateMessagesTo set msgIsUnread = 0 where msgID = ? and msgMailboxID = ? and uID = ?', array($msg->getMessageID(), $msg->msgMailboxID, $this->userInfo->getUserID()));
+            }
+        }
+
+        $response->setError($errorList);
+
+        return new JsonResponse($response);
+    }
+
+    public function unread()
+    {
+        $response = new EditResponse();
+        $errorList = new ErrorList();
+
+        $messageIds = $this->request->request->get("messageIds", []);
+        $box = $this->request->request->get("box");
+
+        $mailbox = UserPrivateMessageMailbox::get($this->userInfo, $box);
+
+        foreach ($messageIds as $messageId) {
+            $msg = UserPrivateMessage::getByID($messageId, $mailbox);
+
+            if ($msg === false) {
+                $errorList->add(t("The given message id doesn't exists."));
+            } else {
+                $this->connection->executeQuery('update UserPrivateMessagesTo set msgIsUnread = 1 where msgID = ? and msgMailboxID = ? and uID = ?', array($msg->getMessageID(), $msg->msgMailboxID, $this->userInfo->getUserID()));
+            }
         }
 
         $response->setError($errorList);

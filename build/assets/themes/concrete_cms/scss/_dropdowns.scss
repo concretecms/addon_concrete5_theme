@@ -9,6 +9,7 @@
   border-radius: 0;
   border: none;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+  text-transform: none;
 }
 
 .dropdown-header {
@@ -28,5 +29,44 @@
   &:hover, &:active, &.active {
     background-color: theme-color('accent');
     color: theme-color('white');
+  }
+}
+
+.dropdown {
+  display: inline;
+}
+
+.dropdown-toggle {
+  border: none;
+  background: transparent;
+  outline: 0;
+}
+
+.ccm-dropdown {
+
+  .dropdown-toggle {
+    padding: 0;
+  }
+
+  .dropdown-toggle:focus {
+    background-color: theme-color('white');
+
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  .dropdown-menu {
+    margin-top: -1px;
+    position: relative;
+
+    &::before {
+      z-index: 4;
+      content: " ";
+      width: calc(100% - 1px);
+      height: 6px;
+      background-color: theme-color('white');
+      position: absolute;
+      top: -3px;
+      left: 1px;
+    }
   }
 }

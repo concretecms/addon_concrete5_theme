@@ -88,6 +88,9 @@ class ServiceProvider extends Provider
                  */
                 $groupRouter->get('/messages/compose', [Messages::class, 'compose']);
                 $groupRouter->post('/messages/send', [Messages::class, 'send']);
+                $groupRouter->post('/messages/read', [Messages::class, 'read']);
+                $groupRouter->post('/messages/unread', [Messages::class, 'unread']);
+                $groupRouter->post('/messages/delete', [Messages::class, 'delete']);
             });
     }
 

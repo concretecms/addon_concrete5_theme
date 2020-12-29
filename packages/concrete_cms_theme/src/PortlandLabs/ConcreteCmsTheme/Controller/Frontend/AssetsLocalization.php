@@ -26,6 +26,7 @@ class AssetsLocalization extends Controller
                 "dialogTitle" => t("Send Message"),
                 "receiverLabel" => t("Send To"),
                 "subjectLabel" => t("Subject"),
+                "attachmentsLabel" => t("Attachments"),
                 "messageLabel" => t("Message"),
                 "sendButton" => t("Send"),
                 "cancelButton" => t("Cancel"),

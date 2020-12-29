@@ -21,6 +21,12 @@ use PortlandLabs\ConcreteCmsTheme\Page\Controller\AccountPageController;
 
 class Messages extends AccountPageController
 {
+    public function write($receiverId = null)
+    {
+        $this->view();
+        $this->set('receiverId', $receiverId);
+    }
+
     public function view($msgMailboxID = UserPrivateMessageMailbox::MBTYPE_INBOX)
     {
         /** @var User $u */

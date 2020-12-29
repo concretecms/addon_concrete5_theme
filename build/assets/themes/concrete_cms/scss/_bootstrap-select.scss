@@ -24,7 +24,7 @@
     border-radius: 0;
     outline: none !important;
     box-shadow: none !important;
-    border-color: theme-color('border');
+    border: 1px solid theme-color('border');
 
     &:focus, &[area-expanded=true] {
       border-color: theme-color('accent');
