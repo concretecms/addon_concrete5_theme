@@ -94,6 +94,12 @@ $this->inc('elements/header.php'); ?>
                 <?php
                 $a = new Area('Sidebar');
                 $a->display($c);
+
+                $stack = Stack::getByName('Thumbs');
+                if ($stack) {
+                    $stack->display();
+                }
+
                 ?>
 
             </div>
