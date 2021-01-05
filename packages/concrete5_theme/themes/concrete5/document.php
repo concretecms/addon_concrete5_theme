@@ -18,11 +18,6 @@ $this->inc('elements/header.php'); ?>
                 $a->setAreaGridMaximumColumns(12);
                 $a->display($c);
                 ?>
-                <?php
-                $a = new Area('Conversation');
-                $a->setAreaGridMaximumColumns(12);
-                $a->display($c);
-                ?>
             </div>
             <div class="col-sm-4 col-sidebar">
                 <?php
