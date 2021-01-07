@@ -16,6 +16,7 @@ use Concrete\Core\Config\Repository\Repository;
 use Concrete\Core\Database\Connection\Connection;
 use Concrete\Core\Package\Package;
 use Concrete\Core\Page\Page;
+use Concrete\Core\Page\Single;
 use Concrete\Theme\Concrete\PageTheme;
 use Concrete\Theme\Elemental\PageTheme as ElementalPageTheme;
 use PortlandLabs\ConcreteCmsTheme\Provider\ServiceProvider;
@@ -105,6 +106,10 @@ class Controller extends Package
         $config->save('concrete.user.registration.enabled', true);
         $config->save('concrete.user.registration.type', 'enabled');
         $config->save('user.profiles_enabled', true);
+
+        Single::add('/members');
+        Single::add('/members/profile')->update(['cName' => 'View Profile']);
+        Single::add('/members/directory');
 
         return $pkg;
     }
