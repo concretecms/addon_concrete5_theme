@@ -103,13 +103,13 @@ class Controller extends Package
         ]);
 
         // Enable Public registration
+
         $config->save('concrete.user.registration.enabled', true);
         $config->save('concrete.user.registration.type', 'enabled');
-        $config->save('user.profiles_enabled', true);
-
-        Single::add('/members');
-        Single::add('/members/profile')->update(['cName' => 'View Profile']);
-        Single::add('/members/directory');
+        $config->save('concrete.user.profiles_enabled', 'enabled');
+        $site = $this->app->make('site')->getActiveSiteForEditing();
+        $siteConfig = $site->getConfigRepository();
+        $siteConfig->save('user.profiles_enabled', true);
 
         return $pkg;
     }
@@ -128,6 +128,10 @@ class Controller extends Package
 
         // Move the new welcome page to the top
         Page::getByPath('/account/welcome')->movePageDisplayOrderToTop();
+
+        Single::add('/members');
+        Single::add('/members/profile')->update(['cName' => 'View Profile']);
+        Single::add('/members/directory');
 
         // Clear the cache to prevent navigation issues
         /** @var NavigationCache $navigationCache */
