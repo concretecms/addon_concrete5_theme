@@ -35,8 +35,8 @@ mix.webpackConfig({
 });
 
 mix.setResourceRoot('../');
-mix.setPublicPath('../packages/concrete_cms_theme/themes/concrete_cms/');
+mix.setPublicPath('../themes/concrete_cms/');
 
 mix
-    .sass('assets/themes/concrete_cms/scss/main.scss', '../packages/concrete_cms_theme/themes/concrete_cms/css')
-    .js('assets/themes/concrete_cms/js/main.js', '../packages/concrete_cms_theme/themes/concrete_cms/js');
+    .sass('assets/themes/concrete_cms/scss/main.scss', '../themes/concrete_cms/css')
+    .js('assets/themes/concrete_cms/js/main.js', '../themes/concrete_cms/js');
