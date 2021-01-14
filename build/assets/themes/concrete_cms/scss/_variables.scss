@@ -5,8 +5,14 @@
  * @author     Fabian Bitter (fabian@bitter.de)
  */
 
-// ---- Relative path from the theme's CSS directory to the concrete/ directory
-$concrete-path: '/Users/fabianbitter/Projekte/concrete5/core/9.0.0/concrete'; // @todo: change me
+// Little hack to be able to compile everything without having a concreteCMS installation.
+//
+// Currently the only file that take advantage from this variable is the following:
+// build/node_modules/@concretecms/bedrock/assets/imagery/scss/frontend/_responsive-slides.scss
+//
+// I have copied the required file(s) into /themes/concrete_cms/images and referenced this variable
+// to the relative directory.
+$concrete-path: '../../../../../../../../themes/concrete_cms/';
 
 // ---- Theme variables
 $primary-margin-y: 20px;
