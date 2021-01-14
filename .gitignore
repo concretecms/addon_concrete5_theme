@@ -1,5 +1,5 @@
 build/node_modules
 .idea
-vendor
+/vendor
 .DS_Store
 mix-manifest.json
