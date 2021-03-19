@@ -137,7 +137,7 @@
                         <a href="https://twitter.com/concrete5" title="concrete5 on Twitter">
                             <i class="fa fa-twitter"></i>
                         </a>
-                        <a href="https://www.facebook.com/concrete5" title="concrete5 on Facebook">
+                        <a href="https://www.facebook.com/concretecms" title="Concrete CMS on Facebook">
                             <i class="fa fa-facebook"></i>
                         </a>
                         <a href="https://www.youtube.com/channel/UCywmkk3TWHLcYyKafNDFCUA" title="concrete5 on Youtube">
